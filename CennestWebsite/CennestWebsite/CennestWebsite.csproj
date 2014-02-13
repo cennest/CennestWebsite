@@ -141,6 +141,7 @@
     <Content Include="circlehover\index7.html" />
     <Content Include="circlehover\js\modernizr.custom.79639.js" />
     <Content Include="circlehover\ReadMe.txt" />
+    <Content Include="Contact.html" />
     <Content Include="contact.php" />
     <Content Include="credits.txt" />
     <Content Include="directionaware\css\demo.css" />
@@ -198,6 +199,7 @@
     <Content Include="images\fashion2-big.jpg" />
     <Content Include="images\fashion2.jpg" />
     <Content Include="images\home-image.jpg" />
+    <Content Include="images\logo.png" />
     <Content Include="images\meditation-home.jpg" />
     <Content Include="images\mondial-big.jpg" />
     <Content Include="images\mondial.jpg" />
