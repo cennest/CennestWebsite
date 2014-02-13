@@ -262,9 +262,9 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 
 
 
-body {background-image: url(mirrored_squares.png); background-color: rgb(181, 181, 181); background-position: inherit inherit; background-repeat: repeat repeat;}
+body {background-image: url(../images/noisy-texture.png); background-color: rgb(181, 181, 181); background-position: inherit inherit; background-repeat: repeat repeat;}
 
-#divBoxed {margin-top: 51px; ;;}
+#divBoxed {margin-top: 51px;}
 
 #divLogo{margin-top: 48px; margin-bottom: 0px; text-align: center;}
 

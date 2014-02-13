@@ -202,6 +202,7 @@
     <Content Include="images\mondial-big.jpg" />
     <Content Include="images\mondial.jpg" />
     <Content Include="images\no-hear.jpg" />
+    <Content Include="images\noisy-texture.png" />
     <Content Include="images\ny.jpg" />
     <Content Include="images\ny2.jpg" />
     <Content Include="images\ok.jpg" />
@@ -406,6 +407,7 @@
     <Content Include="Scripts\yoxview\yoxview-init.js" />
     <Content Include="Scripts\yoxview\yoxview-nojquery.js" />
     <Content Include="Scripts\yoxview\yoxview.css" />
+    <Content Include="slider-images\bannerImg01.png" />
     <Content Include="slider-images\dancer.jpg" />
     <Content Include="slider-images\desert.jpg" />
     <Content Include="slider-images\sunset.jpg" />
