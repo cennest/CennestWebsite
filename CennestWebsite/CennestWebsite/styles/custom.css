@@ -40,7 +40,7 @@ h3, h4, h5, h6 {line-height:1.5 !important}
 
 /* Contact */
 
-ul#contact-info .icon {font-size:20px;float:left;line-height:25px;margin-right:10px;}
+ul#contact-info .icon {font-size:20px;/*float:left;*/line-height:25px;margin-right:10px;}
 
 ul#contact-info .field {font-weight:bold;}
 
@@ -396,6 +396,8 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 
 .navbar .nav-pills > .active > a, .navbar .nav-pills > .active > a:hover, .navbar .nav-pills li.dropdown.open > .dropdown-toggle, .navbar .nav-pills li.dropdown.active > .dropdown-toggle {color:rgb(69, 68, 68);background-color:transparent;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#ebb400;}
 
+.navbar .nav-pills > .active > a, .navbar .nav-pills > .active > a:hover, .navbar .nav-pills li.dropdown.open > .dropdown-toggle, .navbar .nav-pills li.dropdown.inactive > .dropdown-toggle {color:rgb(69, 68, 68);background-color:transparent;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:none;}
+
 .navbar .ddmenu {margin-top:43px;margin-bottom:0px}
 
 .navbar .nav-pills li.dropdown > .dropdown-toggle .caret, .navbar .nav-pills li.dropdown.open > .dropdown-toggle .caret, .navbar .nav-pills li.dropdown.active > .dropdown-toggle .caret, .navbar .nav-pills li.dropdown.open.active > .dropdown-toggle .caret {border-top-color:rgb(69, 68, 68);border-bottom-color:rgb(69, 68, 68);}
@@ -558,3 +560,36 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 .icon_pinterest:hover {background:url('../icons/pinterest2.png')}
 .icon_flickr { width:24px; height:24px; background:url('../icons/icons_flickr.png')}
 .icon_flickr:hover {background:url('../icons/icons_flickr_hover.png')}
+
+/*-----------------------Cennest Modifications--------------------------------------*/
+
+ul#contact-info{
+    margin: 0 0 0px 25px;
+}
+p.copyright{
+    text-align:right;
+    margin:0;
+}
+#divFooter .divPanel{
+    padding:0px;
+}
+#divFooter .divPanel .row-fluid:first-child {
+width: 80%;
+margin: 0 auto;
+padding:10px;
+}
+#divFooter .divPanel .row-fluid:first-child .span3{
+width:50%;
+/*border: 1px solid;*/
+margin: 0 auto;
+}
+#divFooter .divPanel #footerArea3{
+    text-align:right;
+}
+.social_bookmarks{
+    float:right;
+    margin-top:10px;
+}
+.social_bookmarks a div{
+    /*border-bottom: 1px solid #ebb400  ;*/
+}
