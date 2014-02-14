@@ -105,6 +105,9 @@
     <Content Include="3-portfolio.html" />
     <Content Include="about-alt.html" />
     <Content Include="about.html" />
+    <Content Include="Careers.html" />
+    <Content Include="Clients.html" />
+    <Content Include="Company.html" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
@@ -196,6 +199,7 @@
     <Content Include="images\boat.jpg" />
     <Content Include="images\business-team.jpg" />
     <Content Include="images\calm.jpg" />
+    <Content Include="images\Cennest-Customers.png" />
     <Content Include="images\fashion2-big.jpg" />
     <Content Include="images\fashion2.jpg" />
     <Content Include="images\home-image.jpg" />
@@ -409,6 +413,9 @@
     <Content Include="Scripts\yoxview\yoxview-init.js" />
     <Content Include="Scripts\yoxview\yoxview-nojquery.js" />
     <Content Include="Scripts\yoxview\yoxview.css" />
+    <Content Include="Cloud.html" />
+    <Content Include="Mobile.html" />
+    <Content Include="Web.html" />
     <Content Include="slider-images\bannerImg01.png" />
     <Content Include="slider-images\dancer.jpg" />
     <Content Include="slider-images\desert.jpg" />
