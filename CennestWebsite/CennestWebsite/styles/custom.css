@@ -704,15 +704,24 @@ margin: 0 auto;
     color:#CC3300;
     font-size:20px;
 }
-.orangeButton {
-    background-color: #FDB836;
-    border: none;
-    padding: 3% 7%;
-    color: white;
-    /*font-family: OpenSans-Bold;*/
-    font-family:'Open Sans';
-    font-weight: 700;
-    cursor: pointer;
+.cennestButton {
+-webkit-box-shadow: rgb(252, 226, 193) 0px 1px 0px 0px inset;
+box-shadow: rgb(252, 226, 193) 0px 1px 0px 0px inset;
+background-image: linear-gradient(rgb(255, 196, 119) 5%, rgb(251, 158, 37) 100%);
+background-color: rgb(255, 196, 119);
+border-radius:6px;
+border: 1px solid rgb(238, 180, 79);
+display: inline-block;
+cursor: pointer;
+color: rgb(255, 255, 255);
+font-size: 15px;
+font-weight: bold;
+padding: 6px 24px;
+text-decoration: none;
+text-shadow: rgb(204, 159, 82) 0px 1px 0px;
+}
+.cennestButton:hover{
+background-image: linear-gradient(rgb(251, 158, 37) 5%, rgb(255, 196, 119) 100%);
 }
 #mandatoryText{
 color: #D62424;
