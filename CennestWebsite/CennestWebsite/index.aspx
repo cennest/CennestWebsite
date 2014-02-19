@@ -94,21 +94,25 @@
                 <!--Edit Main Content here-->
                 <div class="row-fluid">
                     <div class="span4">
-                        <div class="box">
-                            <i class="general foundicon-website icon"></i>
-                            <h4 class="title">Universal Design</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu euismod lacus. Aenean elementum congue felis vel pretium. Suspendisse potenti. Duis volutpat nisl ac ante facilisis dignissim. Sed nec euismod nunc. In laoreet, metus id condimentum pulvinar, lorem enim tempor massa, at vulputate dolor arcu eget turpis. 
+                        <div class="box blogs">
+                            <%--<i class="general foundicon-website icon"></i>--%>
+                            <h4 class="title"><a target="_blank" href="<%= ViewState["Link1"] %>"><%= ViewState["BlogTitle1"] %></a></h4>
+                            <span class="posted-date"><%= ViewState["BlogDate1"] %></span>
+                            <br /><br />
+                            <p class="description">
+                                <%= ViewState["BlogDescription1"] %>
                             </p>
                         </div>
                     </div>
 
                     <div class="span4">
-                        <div class="box">
-                            <i class="general foundicon-checkmark icon"></i>
-                            <h4 class="title">Easy to Edit</h4>
-                            <p>
-                                Phasellus ut dui interdum, consequat libero vel, dictum enim. Duis quis laoreet neque. Donec pulvinar vitae velit eu porttitor. Curabitur adipiscing vulputate nisl id scelerisque. Nunc non purus id turpis placerat accumsan. Duis eu nisl nibh. Phasellus euismod, magna nec auctor volutpat, leo felis porta dui, sed tempor magna.
+                        <div class="box blogs">
+                            <%--<i class="general foundicon-checkmark icon"></i>--%>
+                           <h4 class="title"><a target="_blank" href="<%= ViewState["Link2"] %>"><%= ViewState["BlogTitle2"] %></a></h4>
+                            <span class="posted-date"><%= ViewState["BlogDate2"] %></span>
+                            <br /><br />
+                            <p class="description">
+                                <%= ViewState["BlogDescription2"] %>
                             </p>
                         </div>
                     </div>
