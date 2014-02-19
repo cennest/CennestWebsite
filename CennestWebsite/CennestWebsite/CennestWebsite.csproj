@@ -105,8 +105,12 @@
     <Content Include="3-portfolio.html" />
     <Content Include="about-alt.html" />
     <Content Include="about.html" />
+    <Content Include="Careers.aspx" />
     <Content Include="Careers.html" />
+    <Content Include="Clients.aspx" />
     <Content Include="Clients.html" />
+    <Content Include="Cloud.aspx" />
+    <Content Include="Company.aspx" />
     <Content Include="Company.html" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
@@ -144,6 +148,7 @@
     <Content Include="circlehover\index7.html" />
     <Content Include="circlehover\js\modernizr.custom.79639.js" />
     <Content Include="circlehover\ReadMe.txt" />
+    <Content Include="Contact.aspx" />
     <Content Include="Contact.html" />
     <Content Include="contact.php" />
     <Content Include="credits.txt" />
@@ -233,7 +238,9 @@
     <Content Include="images\walking-big.jpg" />
     <Content Include="images\walking.jpg" />
     <Content Include="index-alt.html" />
+    <Content Include="index.aspx" />
     <Content Include="index.html" />
+    <Content Include="Mobile.aspx" />
     <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Scripts\bootstrap\css\bootstrap-responsive.min.css" />
@@ -415,6 +422,7 @@
     <Content Include="Scripts\yoxview\yoxview.css" />
     <Content Include="Cloud.html" />
     <Content Include="Mobile.html" />
+    <Content Include="Web.aspx" />
     <Content Include="Web.html" />
     <Content Include="slider-images\bannerImg01.png" />
     <Content Include="slider-images\dancer.jpg" />
@@ -450,6 +458,7 @@
     <Content Include="Scripts\icons\social\fonts\social_foundicons.eot" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.ttf" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.woff" />
+    <Content Include="MasterPage.Master" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="page.html" />
     <Content Include="portfolio-item.html" />
@@ -507,10 +516,73 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Careers.aspx.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Careers.aspx.designer.cs">
+      <DependentUpon>Careers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.aspx.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clients.aspx.designer.cs">
+      <DependentUpon>Clients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cloud.aspx.cs">
+      <DependentUpon>Cloud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cloud.aspx.designer.cs">
+      <DependentUpon>Cloud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile.aspx.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mobile.aspx.designer.cs">
+      <DependentUpon>Mobile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web.aspx.cs">
+      <DependentUpon>Web.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web.aspx.designer.cs">
+      <DependentUpon>Web.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
