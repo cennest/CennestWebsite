@@ -30,4 +30,15 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#liServices").addClass("active");
+
+        });
+
+    </script>
+
 </asp:Content>
