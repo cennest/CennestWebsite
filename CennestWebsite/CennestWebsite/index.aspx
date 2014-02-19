@@ -119,11 +119,13 @@
 
                     <div class="span4">
                         <div class="box">
-                            <i class="general foundicon-monitor icon"></i>
+                            <%--<i class="general foundicon-monitor icon"></i>
                             <h4 class="title">Responsive Design</h4>
                             <p>
                                 Nulla elementum mauris at justo sodales imperdiet. Donec fermentum erat eget ligula fringilla varius. Cras consectetur ante id eros accumsan suscipit. Donec nisi elit, rhoncus porttitor velit vitae, tincidunt condimentum purus. Duis eget sollicitudin augue. Donec sem lacus, varius in massa id, suscipit lacinia augue. 
-                            </p>
+                            </p>--%>
+                            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/anshulee" data-widget-id="436074000213504000">Tweets by @anshulee</a>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
                         </div>
                     </div>
 
