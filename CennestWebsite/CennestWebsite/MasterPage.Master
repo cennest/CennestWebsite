@@ -91,7 +91,7 @@
                             </button>
                             <div class="nav-collapse collapse">
                                 <ul class="nav nav-pills ddmenu">
-                                    <li class="dropdown active">
+                                    <li id="liServices" class="dropdown">
                                         <a href="javascript:void(0)" class="dropdown-toggle">Services<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown">
@@ -101,8 +101,8 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="services.html">Blog</a></li>
-                                    <li class="dropdown inactive">
+                                    <li id="liBlog"><a href="services.html">Blog</a></li>
+                                    <li id="liAboutUs" class="dropdown">
                                         <a href="javascript:void(0)" class="dropdown-toggle">About Us<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown">
@@ -112,7 +112,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="Contact.aspx">Contact Us</a></li>
+                                    <li id="liContactUs"><a href="Contact.aspx">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>

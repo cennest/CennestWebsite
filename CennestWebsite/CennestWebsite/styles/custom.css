@@ -663,12 +663,12 @@ margin: 0 auto;
         }
 
     #contactus #feeds {
-        width: 42%;
         float:left;
         height: 280px;
         /*border: 1px solid brown;*/
         color: #9DC2DD /*7AA6C3*/;
-        padding: 1% 5% 0 6%;
+        padding: 1% 5% 0 13.5%;
+        width: 35%;
     }
 
      #contactus #feeds h4{
