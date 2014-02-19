@@ -153,4 +153,14 @@
     <script src="scripts/yoxview/jquery.yoxview-2.21.js" type="text/javascript"></script>
     <script type="text/javascript">$(document).ready(function () { $('.yoxview').yoxview({ autoHideInfo: false, renderInfoPin: false, backgroundColor: '#ffffff', backgroundOpacity: 0.8, infoBackColor: '#000000', infoBackOpacity: 1 }); $('.yoxview a img').hover(function () { $(this).animate({ opacity: 0.7 }, 300) }, function () { $(this).animate({ opacity: 1 }, 300) }); });</script>
 
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            
+
+        });
+
+    </script>
+
 </asp:Content>
