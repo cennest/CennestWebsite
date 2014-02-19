@@ -42,5 +42,41 @@ namespace CennestWebsite
 
             }
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.recaptcha.Validate();
+                if (this.recaptcha.IsValid)
+                {
+                    ContactUs contactUs = new ContactUs
+                    {
+                        Name = txtName.Text.Trim(),
+                        EmailAddress = txtEmailAddress.Text.Trim(),
+                        MessageSubject = txtMessageSubject.Text.Trim(),
+                        Message = txtMessage.Text.Trim(),
+                        EmailTemplatePath = Server.MapPath("~/EmailTemplates/ContactDetailsTemplate.html")
+                    };
+
+                    contactUs.SendMail();
+                }
+                else
+                {
+                    captchaError.Text = "Recaptcha input invalid.";
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        protected void RecaptchaValidator_ServerValidate(object sender, ServerValidateEventArgs e)
+        {
+            recaptcha.Validate();
+            e.IsValid = this.recaptcha.IsValid;
+        }
+
     }
 }

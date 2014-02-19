@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CennestWebsite.Contact" %>
+<%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -11,24 +12,28 @@
                     <h1>Contact Us</h1>
                     <div id="contactusSection">
                         <div id="contactusForm">
+                            <form runat="server">
+                                <label>Name</label><span class="redText">*</span>
+                                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                                <asp:RequiredFieldValidator runat="server" id="reqName" controltovalidate="txtName" Display="Dynamic" errormessage="Please enter your name." />
 
-                            <label>Name</label><span class="redText">*</span>
-                            <input type="text" />
+                                <label>e-mail address</label><span class="redText">*</span>
+                                <asp:TextBox ID="txtEmailAddress" runat="server"></asp:TextBox>
 
-                            <label>e-mail address</label><span class="redText">*</span>
-                            <input type="text" />
+                                <label>message subject</label><span class="redText">*</span>
+                                <asp:TextBox ID="txtMessageSubject" runat="server"></asp:TextBox>
 
-                            <label>message subject</label><span class="redText">*</span>
-                            <input type="text" />
+                                <label>message</label><span class="redText">*</span>
+                                <asp:TextBox ID="txtMessage" Rows="12" Columns="3" TextMode="MultiLine" runat="server"></asp:TextBox>
 
+                                <recaptcha:RecaptchaControl ID="recaptcha" runat="server" PrivateKey="6LdYJe4SAAAAAB34aAa-9HDXeEK7D4m56UsEh-zb" PublicKey="6LdYJe4SAAAAAFOVLtAWXQMIDe503qBFKw8fvJ2A" />
+                                <span class="captchaError"><asp:Literal ID="captchaError" runat="server" ></asp:Literal></span>
+                                <br />
+                                <span class="redText">*</span>Required fields <br /> 
 
-                            <label>message</label><span class="redText">*</span>
-                            <textarea rows="12" cols="3"></textarea>
+                                <asp:Button ID="btnSubmit" runat="server" CausesValidation="false" CssClass="cennestButton mt5" Text="SUBMIT" OnClick="btnSubmit_Click" />
 
-                            <span class="redText">*</span>Required fields
-                                    <br />
-                            <input type="submit" class="cennestButton mt5" value="SUBMIT" />
-
+                            </form>
                         </div>
                     </div>
                     <div id="feeds">

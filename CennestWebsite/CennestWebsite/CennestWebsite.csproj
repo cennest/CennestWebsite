@@ -39,9 +39,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha, Version=1.0.5.0, Culture=neutral, PublicKeyToken=9afc4d65b28c38c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Recaptcha.dll</HintPath>
+    </Reference>
     <Reference Include="RssToolkit, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\RssToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGridMail, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\SendGridMail.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -179,7 +187,10 @@
     <Content Include="directionaware\index3.html" />
     <Content Include="directionaware\js\jquery.hoverdir.js" />
     <Content Include="directionaware\js\modernizr.custom.97074.js" />
+    <Content Include="DLL\Recaptcha.dll" />
     <Content Include="DLL\RssToolkit.dll" />
+    <Content Include="DLL\SendGridMail.dll" />
+    <Content Include="EmailTemplates\ContactDetailsTemplate.html" />
     <Content Include="email\index.php" />
     <Content Include="email\validation.js" />
     <Content Include="gallery.html" />
@@ -556,6 +567,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContactUs.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
