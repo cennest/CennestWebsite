@@ -729,3 +729,15 @@ margin: 2% 0;
 display: block;
 font-size:90%;
 }
+
+.blogs h4 {
+    margin-bottom:0px;
+}
+
+.blogs .title a {
+    line-height:30px;
+}
+
+.blogs span.posted-date {
+    font-size:13px;
+}

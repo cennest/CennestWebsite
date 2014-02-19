@@ -53,19 +53,19 @@
             <div class="row-fluid">
                 <div class="span12">
                     <div class="social_bookmarks">
-                        <a href="#">
+                        <a target="_blank" href="#">
                             <div class="icon_twitter"></div>
                         </a>
-                        <a href="#">
+                        <a target="_blank" href="#">
                             <div class="icon_facebook"></div>
                         </a>
-                        <a href="#">
+                        <a target="_blank" href="#">
                             <div class="icon_google"></div>
                         </a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row-fluid">
                 <div class="span12">
                     <!--<div class="social_bookmarks">                    

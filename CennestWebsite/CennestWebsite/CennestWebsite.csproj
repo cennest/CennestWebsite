@@ -39,6 +39,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RssToolkit, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\RssToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -175,6 +179,7 @@
     <Content Include="directionaware\index3.html" />
     <Content Include="directionaware\js\jquery.hoverdir.js" />
     <Content Include="directionaware\js\modernizr.custom.97074.js" />
+    <Content Include="DLL\RssToolkit.dll" />
     <Content Include="email\index.php" />
     <Content Include="email\validation.js" />
     <Content Include="gallery.html" />
