@@ -688,6 +688,12 @@ margin: 0 auto;
                 color:#4D8FBB;
             }
 
+        #contactus #feeds p span.posted-date {
+            display:block;
+            color:#898989;
+            font-size:13px;
+        }
+
             #contactus #feeds p a[href^="mailto:"] {
                 /*color: #9DC2DD;*/
                 color:#4D8FBB;
