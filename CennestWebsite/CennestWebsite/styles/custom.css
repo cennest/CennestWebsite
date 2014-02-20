@@ -749,10 +749,42 @@ font-size:90%;
 }
 
 
-.captchaError {
-    color:red;
+.field-validation-error {
+    color: #CC3300;
 }
 
 #recaptcha_response_field {
     color:rgb(69, 68, 68) !important;
 }
+
+
+.qtip.success-message {
+    color: #4F8A10 !important;
+    background-color: #DFF2BF !important;
+    border: 1px solid #DFF2BF !important;
+    padding:10px 5px;
+    font-size:14px;
+    line-height:20px;
+    min-width:350px;
+    border-radius:5px;
+}
+
+.qtip.success-message .qtip-content {
+    width:400px;
+}
+
+.qtip.error-message {
+    color: #D8000C !important;
+    background-color: #FFBABA !important;
+    border: 1px solid #FFBABA !important;
+    padding:10px 5px;
+    font-size:14px;
+    line-height:20px;
+    min-width:350px;
+    border-radius:5px;
+}
+
+.qtip.error-message .qtip-content {
+    width:400px;
+}
+

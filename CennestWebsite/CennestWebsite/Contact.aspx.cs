@@ -59,7 +59,20 @@ namespace CennestWebsite
                         EmailTemplatePath = Server.MapPath("~/EmailTemplates/ContactDetailsTemplate.html")
                     };
 
-                    contactUs.SendMail();
+                    if (contactUs.SendMail())
+                    {
+                        txtEmailAddress.Text = string.Empty;
+                        txtMessage.Text = string.Empty;
+                        txtMessageSubject.Text = string.Empty;
+                        txtName.Text = string.Empty;
+                        captchaError.Text = string.Empty;
+                        formSumbitResult.Value = "true";
+                    }
+                    else
+                    {
+                        captchaError.Text = string.Empty;
+                        formSumbitResult.Value = "false";
+                    }
                 }
                 else
                 {
@@ -68,7 +81,7 @@ namespace CennestWebsite
             }
             catch (Exception ex)
             {
-
+                formSumbitResult.Value = "false";
             }
         }
 
