@@ -752,3 +752,7 @@ font-size:90%;
 .captchaError {
     color:red;
 }
+
+#recaptcha_response_field {
+    color:rgb(69, 68, 68);
+}
