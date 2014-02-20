@@ -105,11 +105,16 @@
                     position: {
                         my: 'center left',  // Position my top left...
                         at: 'center right', // at the bottom right of...
-                        target: $("#<%=btnSubmit.ClientID%>") // my target
-                }
+                        target: $("#<%=btnSubmit.ClientID%>"), // my target
+                        adjust: {
+                            x: 10
+                        }
+                    }
                 });
 
                 $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                $('.error-message').css({ left: $('.error-message').offset().left + 50 });
 
                 setTimeout(function () {
                     $("#<%=btnSubmit.ClientID%>").qtip('destroy');
@@ -131,7 +136,10 @@
                     position: {
                         my: 'center left',  // Position my top left...
                         at: 'center right', // at the bottom right of...
-                        target: $("#<%=btnSubmit.ClientID%>") // my target
+                        target: $("#<%=btnSubmit.ClientID%>"), // my target
+                        adjust: {
+                            x: 10
+                        }
                     }
                 });
 

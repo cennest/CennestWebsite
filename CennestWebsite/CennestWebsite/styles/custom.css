@@ -759,32 +759,24 @@ font-size:90%;
 
 
 .qtip.success-message {
-    color: #4F8A10 !important;
-    background-color: #DFF2BF !important;
-    border: 1px solid #DFF2BF !important;
+    color: #FF9900 !important;
+    background-color: #F0F0F0 !important;
+    border: 1px solid #E0E0E0 !important;
     padding:10px 5px;
     font-size:14px;
     line-height:20px;
     min-width:350px;
     border-radius:5px;
-}
-
-.qtip.success-message .qtip-content {
-    width:400px;
 }
 
 .qtip.error-message {
-    color: #D8000C !important;
-    background-color: #FFBABA !important;
-    border: 1px solid #FFBABA !important;
+    color: #CC3300 !important;
+    background-color: #FFE9E8 !important;
+    border: 1px solid #FFBAD2 !important;
     padding:10px 5px;
     font-size:14px;
     line-height:20px;
     min-width:350px;
     border-radius:5px;
-}
-
-.qtip.error-message .qtip-content {
-    width:400px;
 }
 
