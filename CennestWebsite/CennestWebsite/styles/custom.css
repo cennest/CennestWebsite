@@ -754,5 +754,5 @@ font-size:90%;
 }
 
 #recaptcha_response_field {
-    color:rgb(69, 68, 68);
+    color:rgb(69, 68, 68) !important;
 }
