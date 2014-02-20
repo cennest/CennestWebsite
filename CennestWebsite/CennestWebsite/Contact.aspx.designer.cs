@@ -13,6 +13,15 @@ namespace CennestWebsite {
     public partial class Contact {
         
         /// <summary>
+        /// reqName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqName;
+        
+        /// <summary>
         /// txtName control.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,22 @@ namespace CennestWebsite {
         protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
-        /// reqName control.
+        /// reqEmailAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqEmailAddress;
+        
+        /// <summary>
+        /// regexEmailAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexEmailAddress;
         
         /// <summary>
         /// txtEmailAddress control.
@@ -40,6 +58,15 @@ namespace CennestWebsite {
         protected global::System.Web.UI.WebControls.TextBox txtEmailAddress;
         
         /// <summary>
+        /// reqMessageSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqMessageSubject;
+        
+        /// <summary>
         /// txtMessageSubject control.
         /// </summary>
         /// <remarks>
@@ -47,6 +74,15 @@ namespace CennestWebsite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMessageSubject;
+        
+        /// <summary>
+        /// reqMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqMessage;
         
         /// <summary>
         /// txtMessage control.
@@ -58,15 +94,6 @@ namespace CennestWebsite {
         protected global::System.Web.UI.WebControls.TextBox txtMessage;
         
         /// <summary>
-        /// recaptcha control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Recaptcha.RecaptchaControl recaptcha;
-        
-        /// <summary>
         /// captchaError control.
         /// </summary>
         /// <remarks>
@@ -76,6 +103,15 @@ namespace CennestWebsite {
         protected global::System.Web.UI.WebControls.Literal captchaError;
         
         /// <summary>
+        /// recaptcha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Recaptcha.RecaptchaControl recaptcha;
+        
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
@@ -83,5 +119,14 @@ namespace CennestWebsite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// formSumbitResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField formSumbitResult;
     }
 }

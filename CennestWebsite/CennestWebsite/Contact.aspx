@@ -2,6 +2,7 @@
 <%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="styles/jquery.qtip.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="divPanel notop page-content">
@@ -13,25 +14,36 @@
                     <div id="contactusSection">
                         <div id="contactusForm">
                             <form runat="server">
-                                <label>Name</label><span class="redText">*</span>
-                                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator runat="server" id="reqName" controltovalidate="txtName" Display="Dynamic" errormessage="Please enter your name." />
+                                <label>Name</label>
+                                <span class="redText">*</span>
+                                <asp:RequiredFieldValidator runat="server" id="reqName" SetFocusOnError="true" CssClass="field-validation-error" controltovalidate="txtName" Display="Dynamic" errormessage="Please enter your name." />
+                                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>                                
 
-                                <label>e-mail address</label><span class="redText">*</span>
+                                <label>e-mail address</label>
+                                <span class="redText">*</span>
+                                <asp:RequiredFieldValidator runat="server" id="reqEmailAddress" SetFocusOnError="true"  CssClass="field-validation-error"  controltovalidate="txtEmailAddress" Display="Dynamic" errormessage="Please enter your email address." />
+                                <asp:RegularExpressionValidator ID="regexEmailAddress" runat="server" CssClass="field-validation-error" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"  Display="Dynamic" ControlToValidate="txtEmailAddress" ErrorMessage="Email address is invalid."></asp:RegularExpressionValidator>
                                 <asp:TextBox ID="txtEmailAddress" runat="server"></asp:TextBox>
 
-                                <label>message subject</label><span class="redText">*</span>
+                                <label>message subject</label>
+                                <span class="redText">*</span>
+                                <asp:RequiredFieldValidator runat="server" id="reqMessageSubject" SetFocusOnError="true"  CssClass="field-validation-error" controltovalidate="txtMessageSubject" Display="Dynamic" errormessage="Please enter message subject." />
                                 <asp:TextBox ID="txtMessageSubject" runat="server"></asp:TextBox>
 
-                                <label>message</label><span class="redText">*</span>
+                                <label>message</label>
+                                <span class="redText">*</span>
+                                <asp:RequiredFieldValidator runat="server" id="reqMessage" SetFocusOnError="true" CssClass="field-validation-error" controltovalidate="txtMessage" Display="Dynamic" errormessage="Please enter message." />
                                 <asp:TextBox ID="txtMessage" Rows="12" Columns="3" TextMode="MultiLine" runat="server"></asp:TextBox>
 
+                                <span id="captchaErrorContainer" class="field-validation-error"><asp:Literal ID="captchaError" runat="server" ></asp:Literal></span>
                                 <recaptcha:RecaptchaControl ID="recaptcha" runat="server" PrivateKey="6LdYJe4SAAAAAB34aAa-9HDXeEK7D4m56UsEh-zb" PublicKey="6LdYJe4SAAAAAFOVLtAWXQMIDe503qBFKw8fvJ2A" />
-                                <span class="captchaError"><asp:Literal ID="captchaError" runat="server" ></asp:Literal></span>
+                                
                                 <br />
                                 <span class="redText">*</span>Required fields <br /> 
 
-                                <asp:Button ID="btnSubmit" runat="server" CausesValidation="false" CssClass="cennestButton mt5" Text="SUBMIT" OnClick="btnSubmit_Click" />
+                                <asp:Button ID="btnSubmit" runat="server" CausesValidation="true" CssClass="cennestButton mt5" Text="SUBMIT" OnClick="btnSubmit_Click" />
+
+                                <asp:HiddenField runat="server" ID="formSumbitResult" />
 
                             </form>
                         </div>
@@ -67,13 +79,70 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
-
+    <script src="Scripts/jquery.qtip.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
 
             $("#liContactUs").addClass("active");
 
+            if ($('#captchaErrorContainer').html()) {
+                $('html, body').animate({ scrollTop: $('#captchaErrorContainer').offset().top });
+            }
+
+            if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
+
+                $("#<%=btnSubmit.ClientID%>").qtip({
+                    content: 'Your message has been submitted successfully.',
+                    style: {
+                        classes: 'success-message'
+                    },
+                    show: {
+                        when: 'click',
+                        ready: true
+                    },
+                    hide: false,
+                    position: {
+                        my: 'center left',  // Position my top left...
+                        at: 'center right', // at the bottom right of...
+                        target: $("#<%=btnSubmit.ClientID%>") // my target
+                }
+                });
+
+                $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                setTimeout(function () {
+                    $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                }, 5000);
+
+            }
+            else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
+                
+                $("#<%=btnSubmit.ClientID%>").qtip({
+                    content: 'An error occured please try again.',
+                    style: {
+                        classes: 'error-message'
+                    },
+                    show: {
+                        when: 'click',
+                        ready: true
+                    },
+                    hide: false,
+                    position: {
+                        my: 'center left',  // Position my top left...
+                        at: 'center right', // at the bottom right of...
+                        target: $("#<%=btnSubmit.ClientID%>") // my target
+                    }
+                });
+
+                $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                setTimeout(function () {
+                    $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                }, 5000);
+
+            }
+            
         });
 
     </script>

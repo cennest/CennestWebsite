@@ -301,6 +301,7 @@
     <Content Include="Scripts\jquery-1.7.min.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.qtip.js" />
     <Content Include="Scripts\prettyphoto\css\prettyPhoto.css" />
     <Content Include="Scripts\prettyphoto\images\fullscreen\high.gif" />
     <Content Include="Scripts\prettyphoto\images\fullscreen\huge.gif" />
@@ -438,6 +439,7 @@
     <Content Include="Scripts\yoxview\yoxview.css" />
     <Content Include="Cloud.html" />
     <Content Include="Mobile.html" />
+    <Content Include="styles\jquery.qtip.css" />
     <Content Include="Web.aspx" />
     <Content Include="Web.html" />
     <Content Include="slider-images\bannerImg01.png" />
