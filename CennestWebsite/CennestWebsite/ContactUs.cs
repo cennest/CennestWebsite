@@ -38,9 +38,9 @@ namespace CennestWebsite
         {
             try
             {
-                var from = new MailAddress("admin@insideradius.com");
+                var from = new MailAddress("admin@cennest.com");
                 var to = new MailAddress[] { new MailAddress("poulomee@cennest.com") };
-                var cc = new MailAddress[] { new MailAddress("poulomee@cennest.com"), new MailAddress("chandrahas.khapekar@harriersys.com") };
+                var cc = new MailAddress[] { new MailAddress("poulomee@cennest.com") };
                 var bcc = new MailAddress[] { new MailAddress("sonal.tirlotkar@cennest.com") };
                 string subject = this.MessageSubject;
                 string messageBody = GetMailTemplate();
