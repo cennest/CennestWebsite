@@ -199,6 +199,7 @@
     <Content Include="DLL\Recaptcha.dll" />
     <Content Include="DLL\RssToolkit.dll" />
     <Content Include="DLL\SendGridMail.dll" />
+    <Content Include="DLL\TweetSharp.dll" />
     <Content Include="EmailTemplates\ContactDetailsTemplate.html" />
     <Content Include="email\index.php" />
     <Content Include="email\validation.js" />
