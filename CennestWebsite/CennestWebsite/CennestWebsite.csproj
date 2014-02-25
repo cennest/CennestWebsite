@@ -196,6 +196,7 @@
     <Content Include="directionaware\index3.html" />
     <Content Include="directionaware\js\jquery.hoverdir.js" />
     <Content Include="directionaware\js\modernizr.custom.97074.js" />
+    <Content Include="DLL\Hammock.ClientProfile.dll" />
     <Content Include="DLL\Recaptcha.dll" />
     <Content Include="DLL\RssToolkit.dll" />
     <Content Include="DLL\SendGridMail.dll" />
