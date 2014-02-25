@@ -822,7 +822,16 @@ font-size:90%;
     /*ContactUs Section*/
 
     #contactus #contactusSection {
-        width:70%;
+        width:100%;
+    }
+
+    #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
+         width:80%;
+         display:block;
+    }
+
+    #contactus #contactusForm textarea {
+        width:95%;
     }
 
     #contactus #feeds {
@@ -861,7 +870,16 @@ font-size:90%;
      /*ContactUs Section*/
 
     #contactus #contactusSection {
-        width:70%;
+        width:100%;
+    }
+
+    #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
+         width:80%;
+         display:block;
+    }
+
+    #contactus #contactusForm textarea {
+        width:95%;
     }
 
     #contactus #feeds {
@@ -901,7 +919,16 @@ font-size:90%;
      /*ContactUs Section*/
 
     #contactus #contactusSection {
-        width:70%;
+        width:100%;
+    }
+
+    #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
+         width:80%;
+         display:block;
+    }
+
+    #contactus #contactusForm textarea {
+        width:95%;
     }
 
     #contactus #feeds {
@@ -942,7 +969,16 @@ font-size:90%;
      /*ContactUs Section*/
 
     #contactus #contactusSection {
-        width:70%;
+        width:100%;
+    }
+
+    #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
+         width:80%;
+         display:block;
+    }
+
+    #contactus #contactusForm textarea {
+        width:95%;
     }
 
     #contactus #feeds {

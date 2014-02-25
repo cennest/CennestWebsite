@@ -118,14 +118,44 @@
                     </div>
 
                     <div class="span4">
-                        <div class="box">
+                        <div class="box" style="height:300px;overflow-y:auto;">
                             <%--<i class="general foundicon-monitor icon"></i>
                             <h4 class="title">Responsive Design</h4>
                             <p>
                                 Nulla elementum mauris at justo sodales imperdiet. Donec fermentum erat eget ligula fringilla varius. Cras consectetur ante id eros accumsan suscipit. Donec nisi elit, rhoncus porttitor velit vitae, tincidunt condimentum purus. Duis eget sollicitudin augue. Donec sem lacus, varius in massa id, suscipit lacinia augue. 
                             </p>--%>
-                            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/anshulee" data-widget-id="436074000213504000">Tweets by @anshulee</a>
-                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                            <%--<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/anshulee" data-widget-id="436074000213504000">Tweets by @anshulee</a>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>--%>
+                            
+                            <asp:Repeater ID="twitterfeed" runat="server" ViewStateMode="Enabled">
+                                <ItemTemplate>
+                                    <table>
+                                        <tr>
+                                            <td style="vertical-align:top;">
+                                                <div class="twitter-pic">
+                                                    <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank">
+                                                        <img src="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ProfileImageUrl %>" width="42" height="42" alt="twitter icon" />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td style="vertical-align:top;">
+                                                <div class="twitter-text">
+                                                    <p>
+                                                        <span class="tweetprofilelink">
+                                                            <strong>
+                                                                <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank"><%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Name %></a>
+                                                            </strong>
+                                                            <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank">@<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ScreenName %></a>
+                                                        </span>
+                                                        <br>
+                                                        <%# ((TweetSharp.TwitterStatus)Container.DataItem).TextAsHtml %>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </div>
                     </div>
 
