@@ -92,7 +92,7 @@
                 <hr>
 
                 <!--Edit Main Content here-->
-                <div class="row-fluid">
+                <div id="blogContainer" class="row-fluid">
                     <div class="span4">
                         <div class="box blogs">
                             <%--<i class="general foundicon-website icon"></i>--%>
@@ -118,7 +118,7 @@
                     </div>
 
                     <div class="span4">
-                        <div class="box" style="height:300px;overflow-y:auto;">
+                        <div class="box" id="twitter-feeds">
                             <%--<i class="general foundicon-monitor icon"></i>
                             <h4 class="title">Responsive Design</h4>
                             <p>
@@ -131,7 +131,7 @@
                                 <ItemTemplate>
                                     <table>
                                         <tr>
-                                            <td style="vertical-align:top;">
+                                            <td style="vertical-align:top;width:45px;">
                                                 <div class="twitter-pic">
                                                     <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank">
                                                         <img src="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ProfileImageUrl %>" width="42" height="42" alt="twitter icon" />
