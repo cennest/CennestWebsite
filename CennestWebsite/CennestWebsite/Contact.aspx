@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="CennestWebsite.Contact" %>
+
 <%@ Register TagPrefix="recaptcha" Namespace="Recaptcha" Assembly="Recaptcha" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -17,23 +18,23 @@
                             <form runat="server">
                                 <label>Name</label>
                                 <span class="redText">*</span>
-                                <asp:RequiredFieldValidator runat="server" id="reqName" SetFocusOnError="true" CssClass="field-validation-error" controltovalidate="txtName" Display="Dynamic" errormessage="Please enter your name." />
-                                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>                                
+                                <asp:RequiredFieldValidator runat="server" ID="reqName" SetFocusOnError="true" CssClass="field-validation-error" ControlToValidate="txtName" Display="Dynamic" ErrorMessage="Please enter your name." />
+                                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
 
                                 <label>e-mail address</label>
                                 <span class="redText">*</span>
-                                <asp:RequiredFieldValidator runat="server" id="reqEmailAddress" SetFocusOnError="true"  CssClass="field-validation-error"  controltovalidate="txtEmailAddress" Display="Dynamic" errormessage="Please enter your email address." />
-                                <asp:RegularExpressionValidator ID="regexEmailAddress" runat="server" CssClass="field-validation-error" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"  Display="Dynamic" ControlToValidate="txtEmailAddress" ErrorMessage="Email address is invalid."></asp:RegularExpressionValidator>
+                                <asp:RequiredFieldValidator runat="server" ID="reqEmailAddress" SetFocusOnError="true" CssClass="field-validation-error" ControlToValidate="txtEmailAddress" Display="Dynamic" ErrorMessage="Please enter your email address." />
+                                <asp:RegularExpressionValidator ID="regexEmailAddress" runat="server" CssClass="field-validation-error" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic" ControlToValidate="txtEmailAddress" ErrorMessage="Email address is invalid."></asp:RegularExpressionValidator>
                                 <asp:TextBox ID="txtEmailAddress" runat="server"></asp:TextBox>
 
                                 <label>message subject</label>
                                 <span class="redText">*</span>
-                                <asp:RequiredFieldValidator runat="server" id="reqMessageSubject" SetFocusOnError="true"  CssClass="field-validation-error" controltovalidate="txtMessageSubject" Display="Dynamic" errormessage="Please enter message subject." />
+                                <asp:RequiredFieldValidator runat="server" ID="reqMessageSubject" SetFocusOnError="true" CssClass="field-validation-error" ControlToValidate="txtMessageSubject" Display="Dynamic" ErrorMessage="Please enter message subject." />
                                 <asp:TextBox ID="txtMessageSubject" runat="server"></asp:TextBox>
 
                                 <label>message</label>
                                 <span class="redText">*</span>
-                                <asp:RequiredFieldValidator runat="server" id="reqMessage" SetFocusOnError="true" CssClass="field-validation-error" controltovalidate="txtMessage" Display="Dynamic" errormessage="Please enter message." />
+                                <asp:RequiredFieldValidator runat="server" ID="reqMessage" SetFocusOnError="true" CssClass="field-validation-error" ControlToValidate="txtMessage" Display="Dynamic" ErrorMessage="Please enter message." />
                                 <asp:TextBox ID="txtMessage" Rows="12" Columns="3" TextMode="MultiLine" runat="server"></asp:TextBox>
 
 
@@ -126,6 +127,27 @@
                 $('html, body').animate({ scrollTop: $('#captchaErrorContainer').offset().top });
             }
 
+            $("#<%=btnSubmit.ClientID%>").qtip({
+                content: 'Your message has been submitted successfully.',
+                style: {
+                    classes: 'success-message'
+                },
+                show: {
+                    when: 'click',
+                    ready: true
+                },
+                hide: false,
+                position: {
+                    my: 'center left',  // Position my top left...
+                    at: 'center right', // at the bottom right of...
+                    target: $("#<%=btnSubmit.ClientID%>"), // my target
+                    adjust: {
+                        x: 10
+                    }
+                },
+                viewport: $(window)
+            });
+
             if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
 
                 $("#<%=btnSubmit.ClientID%>").qtip({
@@ -158,7 +180,7 @@
 
             }
             else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
-                
+
                 $("#<%=btnSubmit.ClientID%>").qtip({
                     content: 'An error occured please try again.',
                     style: {
@@ -186,7 +208,7 @@
                 }, 5000);
 
             }
-            
+
         });
 
     </script>
