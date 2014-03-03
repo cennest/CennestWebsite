@@ -204,6 +204,9 @@
     <Content Include="EmailTemplates\ContactDetailsTemplate.html" />
     <Content Include="email\index.php" />
     <Content Include="email\validation.js" />
+    <Content Include="FontAwesome\css\font-awesome.css" />
+    <Content Include="FontAwesome\css\font-awesome.min.css" />
+    <Content Include="FontAwesome\fonts\fontawesome-webfont.svg" />
     <Content Include="gallery.html" />
     <Content Include="icons-source.txt" />
     <Content Include="icons\ballicons\analytics.png" />
@@ -488,6 +491,10 @@
     <Content Include="Scripts\icons\social\fonts\social_foundicons.ttf" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.woff" />
     <Content Include="MasterPage.Master" />
+    <Content Include="FontAwesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="FontAwesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="FontAwesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="FontAwesome\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="page.html" />
     <Content Include="portfolio-item.html" />
