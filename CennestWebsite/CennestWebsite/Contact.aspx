@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="styles/jquery.qtip.css" rel="stylesheet" />
+    <link href="FontAwesome/css/font-awesome.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="divPanel notop page-content">
@@ -35,11 +36,42 @@
                                 <asp:RequiredFieldValidator runat="server" id="reqMessage" SetFocusOnError="true" CssClass="field-validation-error" controltovalidate="txtMessage" Display="Dynamic" errormessage="Please enter message." />
                                 <asp:TextBox ID="txtMessage" Rows="12" Columns="3" TextMode="MultiLine" runat="server"></asp:TextBox>
 
-                                <span id="captchaErrorContainer" class="field-validation-error"><asp:Literal ID="captchaError" runat="server" ></asp:Literal></span>
-                                <recaptcha:RecaptchaControl ID="recaptcha" runat="server" PrivateKey="6LdYJe4SAAAAAB34aAa-9HDXeEK7D4m56UsEh-zb" PublicKey="6LdYJe4SAAAAAFOVLtAWXQMIDe503qBFKw8fvJ2A" />
-                                
+
+                                <%--<recaptcha:RecaptchaControl ID="recaptcha" runat="server" Width="100%" CustomThemeWidget="recaptcha_widget" PrivateKey="6LdYJe4SAAAAAB34aAa-9HDXeEK7D4m56UsEh-zb" PublicKey="6LdYJe4SAAAAAFOVLtAWXQMIDe503qBFKw8fvJ2A" />--%>
+
+
+
+                                <%--Custom Recaptcha Start--%>
+                                <div class="captcha-wrapper" id="captcha-wrapper" style="display: none">
+                                    <div class="captcha-input-container">
+                                        <div id="recaptcha_image"></div>
+                                        <span id="captchaErrorContainer" class="field-validation-error">
+                                            <asp:Literal ID="captchaError" runat="server"></asp:Literal>
+                                        </span>
+                                        <input type="text" placeholder="Type text here" class="captcha" id="recaptcha_response_field" name="recaptcha_response_field">
+                                    </div>
+                                    <div class="captcha-action">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:Recaptcha.switch_type('image')" id="captcha-refresh" title="Refresh"><i class="fa fa-refresh"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:Recaptcha.switch_type('audio')" id="captcha-audio" title="Volume"><i class="fa fa-volume-up"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:Recaptcha.showhelp()" id="captcha-help" title="Help"><i class="fa fa-question-circle"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <recaptcha:RecaptchaControl CustomThemeWidget="captcha-wrapper" Theme="custom" ID="recaptcha" runat="server" PrivateKey="6LdYJe4SAAAAAB34aAa-9HDXeEK7D4m56UsEh-zb" PublicKey="6LdYJe4SAAAAAFOVLtAWXQMIDe503qBFKw8fvJ2A" />
+                                <%--Custom Recaptcha End--%>
+
+
+
                                 <br />
-                                <span class="redText">*</span>Required fields <br /> 
+                                <span class="redText">*</span>Required fields
+                                <br />
 
                                 <asp:Button ID="btnSubmit" runat="server" CausesValidation="true" CssClass="cennestButton mt5" Text="SUBMIT" OnClick="btnSubmit_Click" />
 
@@ -86,7 +118,11 @@
 
             $("#liContactUs").addClass("active");
 
-            if ($('#captchaErrorContainer').html()) {
+            $('#recaptcha_image').removeAttr('style');
+
+            $('#recaptcha_challenge_image').removeAttr('height').removeAttr('width');
+
+            if ($('#captchaErrorContainer').html().trim() != "") {
                 $('html, body').animate({ scrollTop: $('#captchaErrorContainer').offset().top });
             }
 
