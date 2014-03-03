@@ -1038,15 +1038,19 @@ font-size:90%;
       #contactus {
         margin:0 auto;
         display:block;
+        width:100%;
     }
 
         #contactus h1 {
             font-size:220%;
         }
 
+
+
     #contactus #contactusSection {
-        width:90%;
+        width:100%;
     }
+
 
     #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
          width:80%;
@@ -1074,21 +1078,17 @@ font-size:90%;
     }
 
      .captcha-action {
-        padding:2% 5% 5% 5%;
+        padding:5% 5% 5% 5%;
     }
 
     .captcha-action ul li {
-        margin-bottom:2%;
+        margin-bottom:3%;
     }
 
 }
 
 @media all and (max-width: 320px)
 {
-    body {
-        border:1px solid red;
-    }
-
     .divPanel {
         padding:0 5% !important;
     }
@@ -1141,10 +1141,11 @@ font-size:90%;
     #contactus {
         margin:0 auto;
         display:block;
+        width:100%;
     }
 
     #contactus #contactusSection {
-        width:90%;
+        width:100%;
     }
 
     #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
@@ -1173,11 +1174,12 @@ font-size:90%;
     }
 
     .captcha-action {
-        padding: 0 15px 0 0;
+        padding: 3px 15px 0 0;
     }
 
+
     .captcha-action ul li {
-        margin-bottom:2%;
+        margin-bottom:5%;
     }
 
 }
