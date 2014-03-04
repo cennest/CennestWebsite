@@ -1015,6 +1015,10 @@ font-size:90%;
         width:40%;
     }
 
+    .field-validation-error {
+        font-size:13px;
+    }
+
     /*End ContactUs Section*/
 
 }
@@ -1126,6 +1130,10 @@ font-size:90%;
 
     .captcha-action ul li {
         margin-bottom:3%;
+    }
+
+    .field-validation-error {
+        font-size:13px;
     }
 
 }
@@ -1255,6 +1263,10 @@ font-size:90%;
     }
 
     #contactus #feeds p span.posted-date {
+        font-size:12px;
+    }
+
+    .field-validation-error {
         font-size:12px;
     }
 
