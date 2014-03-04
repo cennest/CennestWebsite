@@ -127,89 +127,149 @@
                 $('html, body').animate({ scrollTop: $('#captchaErrorContainer').offset().top });
             }
 
-            $("#<%=btnSubmit.ClientID%>").qtip({
-                content: 'Your message has been submitted successfully.',
-                style: {
-                    classes: 'success-message'
-                },
-                show: {
-                    when: 'click',
-                    ready: true
-                },
-                hide: false,
-                position: {
-                    my: 'center left',  // Position my top left...
-                    at: 'center right', // at the bottom right of...
-                    target: $("#<%=btnSubmit.ClientID%>"), // my target
-                    adjust: {
-                        x: 10
-                    }
-                },
-                viewport: $(window)
+            setTimeout(function () {
+                DesignAccordingToBrowserWith();
+            }, 1000);
+
+            $(window).resize(function () {
+                DesignAccordingToBrowserWith();
             });
 
-            if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
-
-                $("#<%=btnSubmit.ClientID%>").qtip({
-                    content: 'Your message has been submitted successfully.',
-                    style: {
-                        classes: 'success-message'
-                    },
-                    show: {
-                        when: 'click',
-                        ready: true
-                    },
-                    hide: false,
-                    position: {
-                        my: 'center left',  // Position my top left...
-                        at: 'center right', // at the bottom right of...
-                        target: $("#<%=btnSubmit.ClientID%>"), // my target
-                        adjust: {
-                            x: 10
-                        }
-                    }
-                });
-
-                $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
-
-                $('.error-message').css({ left: $('.error-message').offset().left + 50 });
-
-                setTimeout(function () {
-                    $("#<%=btnSubmit.ClientID%>").qtip('destroy');
-                }, 5000);
-
-            }
-            else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
-
-                $("#<%=btnSubmit.ClientID%>").qtip({
-                    content: 'An error occured please try again.',
-                    style: {
-                        classes: 'error-message'
-                    },
-                    show: {
-                        when: 'click',
-                        ready: true
-                    },
-                    hide: false,
-                    position: {
-                        my: 'center left',  // Position my top left...
-                        at: 'center right', // at the bottom right of...
-                        target: $("#<%=btnSubmit.ClientID%>"), // my target
-                        adjust: {
-                            x: 10
-                        }
-                    }
-                });
-
-                $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
-
-                setTimeout(function () {
-                    $("#<%=btnSubmit.ClientID%>").qtip('destroy');
-                }, 5000);
-
-            }
-
         });
+
+        function DesignAccordingToBrowserWith() {
+            if (matchMedia('only screen and (max-width: 400px)').matches) {
+                
+                if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
+
+                    $("#<%=formSumbitResult.ClientID%>").val("");
+
+                    $("#<%=btnSubmit.ClientID%>").qtip({
+                        content: 'Your message has been submitted successfully.',
+                        style: {
+                            classes: 'success-message'
+                        },
+                        show: {
+                            when: 'click',
+                            ready: true
+                        },
+                        hide: false,
+                        position: {
+                            my: 'top left',  // Position my top left...
+                            at: 'bottom left', // at the bottom right of...
+                            target: $("#<%=btnSubmit.ClientID%>"), // my target
+                            adjust: {
+                                x: 10
+                            }
+                        }
+                    });
+
+                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                    setTimeout(function () {
+                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                    }, 5000);
+
+                }
+                else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
+
+                    $("#<%=formSumbitResult.ClientID%>").val("");
+
+                    $("#<%=btnSubmit.ClientID%>").qtip({
+                        content: 'An error occured please try again.',
+                        style: {
+                            classes: 'error-message'
+                        },
+                        show: {
+                            when: 'click',
+                            ready: true
+                        },
+                        hide: false,
+                        position: {
+                            my: 'top left',  // Position my top left...
+                            at: 'bottom left', // at the bottom right of...
+                            target: $("#<%=btnSubmit.ClientID%>"), // my target
+                            adjust: {
+                                x: 10
+                            }
+                        }
+                    });
+
+                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                    setTimeout(function () {
+                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                    }, 5000);
+
+                }
+
+            }
+            else {
+                
+                if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
+
+                    $("#<%=formSumbitResult.ClientID%>").val("");
+
+                    $("#<%=btnSubmit.ClientID%>").qtip({
+                        content: 'Your message has been submitted successfully.',
+                        style: {
+                            classes: 'success-message'
+                        },
+                        show: {
+                            when: 'click',
+                            ready: true
+                        },
+                        hide: false,
+                        position: {
+                            my: 'center left',  // Position my top left...
+                            at: 'center right', // at the bottom right of...
+                            target: $("#<%=btnSubmit.ClientID%>"), // my target
+                            adjust: {
+                                x: 10
+                            }
+                        }
+                    });
+
+                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                    setTimeout(function () {
+                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                    }, 5000);
+
+                }
+                else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
+
+                    $("#<%=formSumbitResult.ClientID%>").val("");
+
+                    $("#<%=btnSubmit.ClientID%>").qtip({
+                        content: 'An error occured please try again.',
+                        style: {
+                            classes: 'error-message'
+                        },
+                        show: {
+                            when: 'click',
+                            ready: true
+                        },
+                        hide: false,
+                        position: {
+                            my: 'center left',  // Position my top left...
+                            at: 'center right', // at the bottom right of...
+                            target: $("#<%=btnSubmit.ClientID%>"), // my target
+                            adjust: {
+                                x: 10
+                            }
+                        }
+                    });
+
+                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                    setTimeout(function () {
+                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                    }, 5000);
+
+                }
+            }
+        }
 
     </script>
 
