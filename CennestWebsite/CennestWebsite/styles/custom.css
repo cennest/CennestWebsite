@@ -469,8 +469,7 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 }
 
 
-@media (max-width: 767px) {    
-    #divLogo {margin-top:10px;margin-bottom:10px;}
+@media (max-width: 767px) {  
 
     #divSiteTitle {font-size: 25px;}
 
@@ -876,6 +875,24 @@ font-size:90%;
 
 @media all and (max-width: 799px) and (min-width: 600px)
 {
+    
+    body {
+        border:1px solid Red;
+    }
+
+    #divLogo {
+        margin-top: 38px;
+    }
+
+    #divSiteTitle {
+        font-size:24px;
+        line-height: 45px;
+    }
+
+    #divTagLine {
+        font-size:14px;
+    }
+
     /*Footer Section*/
 
     #divFooter .divPanel #footerArea2 {
@@ -934,6 +951,22 @@ font-size:90%;
 @media all and (max-width: 599px)
 {
     /*Footer Section*/
+     body {
+        border:1px solid blue;
+    }
+
+     #divLogo {
+        margin-top: 30px;
+    }
+
+     #divSiteTitle {
+        font-size:22px;
+        line-height: 30px;
+    }
+
+    #divTagLine {
+        font-size:14px;
+    }
 
     #divFooter .divPanel #footerArea2 {
         width:100%;
@@ -988,14 +1021,26 @@ font-size:90%;
 
 @media all and (max-width: 479px)
 {
-
-    .divPanel {
-        padding:0 5% !important;
+    body {
+        border:1px solid green;
     }
 
-    #divSiteTitle {
-        font-size: 18px !important;
-        line-height:35px !important;
+     #divLogo {
+        margin-top: 30px;
+    }
+
+     #divSiteTitle {
+        font-size:20px;
+        line-height: 25px;
+    }
+
+    #divTagLine {
+        font-size:10px;
+        line-height: 18px;
+    }
+    
+    .divPanel {
+        padding:0 5% !important;
     }
 
     .ch-grid li {
@@ -1040,7 +1085,7 @@ font-size:90%;
     }
 
         #contactus h1 {
-            font-size:220%;
+            font-size:200%;
         }
 
 
@@ -1070,9 +1115,9 @@ font-size:90%;
     /*End ContactUs Section*/
 
     .qtip.success-message {
-        min-width:35%;
-        max-width:35%;
-        width:35%;
+        min-width:45%;
+        max-width:45%;
+        width:45%;
     }
 
      .captcha-action {
@@ -1085,17 +1130,38 @@ font-size:90%;
 
 }
 
+@media all and (max-width: 400px) {
+    .qtip.success-message {
+        min-width:70%;
+        min-width:70%;
+        min-width:70%;
+    }
+}
+
 @media all and (max-width: 320px)
 {
+    body {
+        border:1px solid black;
+    }
+
+      #divLogo {
+        margin-top: 30px;
+    }
+
+     #divSiteTitle {
+        font-size:16px;
+        line-height: 25px;
+    }
+
+    #divTagLine {
+        font-size:10px;
+        line-height: 13px;
+    }
+
     .divPanel {
         padding:0 5% !important;
     }
-
-    #divSiteTitle {
-        font-size: 15px !important;
-        line-height:30px !important;
-    }
-
+    
     .ch-grid li {
         width:180px !important;
         height:180px !important;
@@ -1166,9 +1232,9 @@ font-size:90%;
     /*End ContactUs Section*/
 
     .qtip.success-message {
-        min-width:65px;
-        max-width:65px;
-        width:65px;
+        min-width:70%;
+        min-width:70%;
+        min-width:70%;
     }
 
     .captcha-action {
@@ -1178,6 +1244,18 @@ font-size:90%;
 
     .captcha-action ul li {
         margin-bottom:5%;
+    }
+
+    #contactus #feeds h4 {
+        font-size:17px;
+    }
+
+    #contactus #feeds a  {
+        font-size:13px;
+    }
+
+    #contactus #feeds p span.posted-date {
+        font-size:12px;
     }
 
 }
