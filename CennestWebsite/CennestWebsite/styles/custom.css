@@ -951,9 +951,9 @@ font-size:90%;
 @media all and (max-width: 599px)
 {
     /*Footer Section*/
-     /*body {
+     body {
         border:1px solid blue;
-    }*/
+    }
 
      #divLogo {
         margin-top: 30px;
@@ -990,6 +990,10 @@ font-size:90%;
 
      /*ContactUs Section*/
 
+    #contactus {
+        width:90%;
+    }
+
     #contactus #contactusSection {
         width:100%;
     }
@@ -1025,9 +1029,9 @@ font-size:90%;
 
 @media all and (max-width: 479px)
 {
-    /*body {
+    body {
         border:1px solid green;
-    }*/
+    }
 
      #divLogo {
         margin-top: 30px;
