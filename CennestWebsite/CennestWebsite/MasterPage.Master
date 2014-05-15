@@ -91,27 +91,27 @@
                             </button>
                             <div class="nav-collapse collapse">
                                 <ul class="nav nav-pills ddmenu">
-                                    <li id="liServices">
-                                        <a href="Services.aspx">Services</a>
-                                        <%--<ul class="dropdown-menu">
-                                            <li class="dropdown">
-                                                <a href="Mobile.aspx" class="dropdown-toggle">Mobile</a>
-                                                <a href="Web.aspx" class="dropdown-toggle">Web</a>
-                                                <a href="Cloud.aspx" class="dropdown-toggle">Cloud</a>
-                                            </li>
-                                        </ul>--%>
-                                    </li>
-                                    <li id="liBlog"><a href="#">Blog</a></li>
                                     <li id="liAboutUs" class="dropdown">
                                         <a href="javascript:void(0)" class="dropdown-toggle">About Us<b class="caret"></b></a>
                                         <ul class="dropdown-menu">
                                             <li class="dropdown">
                                                 <a href="Company.aspx" class="dropdown-toggle">The Company</a>
                                                 <a href="Clients.aspx" class="dropdown-toggle">Clients</a>
-                                                <a href="Careers.aspx" class="dropdown-toggle">Careers</a>
+                                                <a href="Careers.aspx" class="dropdown-toggle">Join Us</a>
                                             </li>
                                         </ul>
                                     </li>
+                                    <li id="liServices" class="dropdown">
+                                        <a href="javascript:void(0)" class="dropdown-toggle">Services<b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown">
+                                                <a href="Services.aspx" class="dropdown-toggle">Offerings</a>
+                                                <a href="Technologies.aspx" class="dropdown-toggle">Technologies</a>
+                                                <a href="Portfolio.aspx" class="dropdown-toggle">Portfolio</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="liBlog"><a href="#">Blog</a></li>
                                     <li id="liContactUs"><a href="Contact.aspx">Contact Us</a></li>
                                 </ul>
                             </div>
