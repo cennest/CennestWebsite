@@ -6,20 +6,16 @@
     <div class="divPanel notop page-content">
 
         <div class="breadcrumbs">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Careers</span>
+            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Join Us</span>
         </div>
 
         <div class="row-fluid">
             <div class="span12" id="divMain">
                 <!--Edit Main Content Area here-->
-                <h1>Careers</h1>
+                <h1>join Us</h1>
 
-                <p>Content on this page is for presentation purposes only. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p>Of course, you need to atleast know how to code in an OOP-based language. Besides that though, you are excited about being in an always-learning mode and enjoy technology, you can see patterns emerging around you and you are not wedded to any specific technology. See of you can cope with our work by looking at our blogs and then drop us a mail with your resume at careers@cennest.com .</p>
                 <img src="images/turbines.jpg" class="img-polaroid" style="margin: 5px 0px 15px;">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum est at luctus tincidunt. Fusce pretium quam vel velit fringilla fringilla. Fusce sollicitudin, ligula vel tempus congue, ligula nisi facilisis lacus, et adipiscing justo arcu nec justo.  </p>
-                <p>Proin ipsum nulla, cursus vitae mollis iaculis, malesuada a dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla eu augue eu mauris sodales viverra at sed libero. Vivamus rhoncus volutpat hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Quisque eu aliquam felis. Nam elementum dui eget fringilla vulputate. Suspendisse augue turpis, eleifend ac diam id, condimentum fermentum elit. Nunc laoreet turpis a risus luctus imperdiet. Suspendisse metus tellus, sodales nec elementum eu, facilisis at ante. Sed pharetra cursus metus, eget tempor dui. Nulla facilisi. Quisque congue justo odio, vitae fringilla sem sollicitudin sed.</p>
-                <p>Maecenas dapibus mauris et lectus iaculis tristique quis in metus. Praesent vitae neque vel lectus mattis hendrerit. Curabitur aliquam, sapien eget scelerisque tincidunt, velit ante dapibus eros, eu consectetur magna libero sed eros. Quisque nibh purus, posuere vitae lacus a, placerat vulputate nisl. Aliquam semper vel risus sed venenatis. Morbi consectetur viverra aliquet. Suspendisse vitae justo nulla.</p>
 
             </div>
         </div>
