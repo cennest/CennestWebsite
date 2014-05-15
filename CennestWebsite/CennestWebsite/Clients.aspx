@@ -6,7 +6,7 @@
     <div class="divPanel notop page-content">
 
         <div class="breadcrumbs">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>About Us</span>
+            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Clients</span>
         </div>
 
         <div class="row-fluid">
