@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="divPanel notop page-content">
+    <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
             <a href="index.html">Home</a> &nbsp;/&nbsp; <span>The Company</span>
@@ -14,8 +14,7 @@
                 <!--Edit Main Content Area here-->
                 <h1>Portfolio</h1>
 
-                <p>Coming soon...</p>
-                <img src="images/turbines.jpg" class="img-polaroid" style="margin: 5px 0px 15px;">
+                <img src="images/Portfolio.jpg" class="img-polaroid" style="margin: 5px 0px 15px;">
 
             </div>
         </div>
