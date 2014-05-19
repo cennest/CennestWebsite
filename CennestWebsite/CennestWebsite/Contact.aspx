@@ -7,7 +7,7 @@
     <link href="FontAwesome/css/font-awesome.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="divPanel notop page-content">
+    <div class="divPanel notop page-content ">
 
         <div class="row-fluid">
             <div class="span12" id="divMain">
