@@ -44,53 +44,49 @@
         </div>
 
         <div class="row-fluid">
+            <div><h1 class="text-center orangeText">Our Offerings</h1></div>
             <div class="span12" id="divMain">
-
-                <ul class="ch-grid">
+                <div class="ch-grid-container">
+                                    <ul class="ch-grid">
                     <li>
                         <div class="ch-item ch-img-1">
                             <div class="ch-info">
-                                <a href="about.html">
-                                    <h3>About</h3>
-                                    <p>
-                                        Lorem Ipsum...
-                                                <!--<a href="about.html">-->
-                                        <br />
-                                        Read More<!--</a>-->
-                                    </p>
-                                </a>
+                                    <h3>Mobile. Web. Cloud</h3>
+                                    <p><a href="Services.aspx">Read More</a></p>
                             </div>
+                        </div>
+                        <div>
+                            <h5>Mobile. Web. Cloud</h5>
                         </div>
                     </li>
                     <li>
                         <div class="ch-item ch-img-2">
                             <div class="ch-info">
-                                <h3>Services</h3>
-                                <p>Lorem Ipsum... <a href="services.html">Read More</a></p>
+                                <h3>Product Management & Prototyping</h3>
+                                <p><a href="Services.aspx">Read More</a></p>
                             </div>
+                        </div>
+                        <div>
+                            <h5>Product Management & Prototyping</h5>
                         </div>
                     </li>
                     <li>
                         <div class="ch-item ch-img-3">
                             <div class="ch-info">
-                                <h3>Portfolio</h3>
-                                <p>Lorem Ipsum... <a href="gallery.html">Read More</a></p>
+                                <h3>Technology Consulting</h3>
+                                <p><a href="Services.aspx">Read More</a></p>
                             </div>
                         </div>
+                        <div>
+                            <h5>Technology Consulting</h5>
+                        </div>
                     </li>
-                    <!--<li>
-                                <div class="ch-item ch-img-4">
-                                    <div class="ch-info">
-                                        <h3>Contact</h3>
-                                        <p>Lorem Ipsum... <a href="contact.php">Read More</a></p>
-                                    </div>
-                                </div>
-                            </li>-->
-
                 </ul>
+                </div>
+
 
                 <hr>
-
+                <div><h1 class="text-center orangeText">Technical Updates</h1></div>
                 <!--Edit Main Content here-->
                 <div id="blogContainer" class="row-fluid">
                     <div class="span4">
@@ -99,7 +95,7 @@
                             <h4 class="title"><a target="_blank" href="<%= ViewState["Link1"] %>"><%= ViewState["BlogTitle1"] %></a></h4>
                             <span class="posted-date"><%= ViewState["BlogDate1"] %></span>
                             <br /><br />
-                            <p class="description">
+                            <p class="description text-justify">
                                 <%= ViewState["BlogDescription1"] %>
                             </p>
                         </div>
@@ -111,7 +107,7 @@
                            <h4 class="title"><a target="_blank" href="<%= ViewState["Link2"] %>"><%= ViewState["BlogTitle2"] %></a></h4>
                             <span class="posted-date"><%= ViewState["BlogDate2"] %></span>
                             <br /><br />
-                            <p class="description">
+                            <p class="description text-justify">
                                 <%= ViewState["BlogDescription2"] %>
                             </p>
                         </div>
