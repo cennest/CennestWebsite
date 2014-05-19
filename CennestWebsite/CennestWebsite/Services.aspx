@@ -14,12 +14,16 @@
     <!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="divPanel notop page-content">
+    <div class="divPanel notop page-content page-container">
+
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Offerings</span>
+        </div>
 
         <div class="row-fluid">
             <div class="span12" id="div1">
                 <!--Edit Main Content Area here-->
-                <h1>Services</h1>
+                <h1>Offerings</h1>
             </div>
         </div>
 
@@ -28,34 +32,28 @@
 
                 <ul class="ch-grid">
                     <li>
-                        <div class="ch-item ch-img-1">
-                            <div class="ch-info">
+                        <div class="roundImage ch-img-1">
+                            <%--<div class="ch-info">
                                 <a href="about.html">
-                                    <h3>About</h3>
-                                    <p>
-                                        Lorem Ipsum...
-                                                <!--<a href="about.html">-->
-                                        <br />
-                                        Read More<!--</a>-->
-                                    </p>
+                                    <h3>Mobile. Web. Cloud</h3>
                                 </a>
-                            </div>
+                            </div>--%>
                         </div>
                     </li>
                     <li>
-                        <div class="ch-item ch-img-2">
-                            <div class="ch-info">
-                                <h3>Services</h3>
-                                <p>Lorem Ipsum... <a href="services.html">Read More</a></p>
-                            </div>
+                        <div class="roundImage ch-img-2">
+                            <%--<div class="ch-info">
+                                <h3>Product Management & Prototyping</h3>
+                                <p><a href="services.html">Read More</a></p>
+                            </div>--%>
                         </div>
                     </li>
                     <li>
-                        <div class="ch-item ch-img-3">
-                            <div class="ch-info">
-                                <h3>Portfolio</h3>
-                                <p>Lorem Ipsum... <a href="gallery.html">Read More</a></p>
-                            </div>
+                        <div class="roundImage ch-img-3">
+                            <%--<div class="ch-info">
+                                <h3>Technology Consulting</h3>
+                                <p><a href="gallery.html">Read More</a></p>
+                            </div>--%>
                         </div>
                     </li>
                     <!--<li>
@@ -78,7 +76,7 @@
                             <%--<i class="general foundicon-website icon"></i>--%>
                             <h4 class="title"><a>Mobile. Web. Cloud </a></h4>
                             <br />
-                            <p class="description">
+                            <p class="description text-justify">
                                 We help you in the development of your ideas associated with the three platforms above. If you really think about it, these terms are interlinked and your initiatives will eventually span these three modes for fruition of your vision.
                             </p>
                         </div>
@@ -89,7 +87,7 @@
                             <%--<i class="general foundicon-checkmark icon"></i>--%>
                            <h4 class="title"><a>Product Management & Prototyping</a></h4>
                             <br />
-                            <p class="description">
+                            <p class="description text-justify">
                                 After your great idea but before the product, comes the chasm of uncertainty- thoughts, features, technologies, wireframes, proof-of-concepts. We help you negotiate this territory and focus on what is really, REALLY important to you. 
                             </p>
                         </div>
@@ -100,7 +98,7 @@
                             <%--<i class="general foundicon-checkmark icon"></i>--%>
                            <h4 class="title"><a>Technology Consulting</a></h4>
                             <br />
-                            <p class="description">
+                            <p class="description text-justify">
                                 You have enough things on your plate while managing your big idea. Let us help you by taking care of technology and its rapid changes. We will ensure you receive the best guidance on technology to be able to equip you better.
                             </p>
                         </div>
