@@ -1,10 +1,15 @@
 
 
+.ch-grid-container{
+    width:75%;
+    margin:0 auto 4% auto;
+}
+
 .ch-grid {
 	margin: 20px 0 0 0;
 	padding: 0;
 	list-style: none;
-	display: block;
+	display: table;
 	text-align: center;
 	width: 100%;
 }
@@ -22,6 +27,10 @@
 .ch-grid li {
 	width: 215px;
 	height: 215px;
-	display: inline-block;
-	margin: 20px;
+	display: table-cell;
+	margin: 25px;
+    border-collapse: separate;
+    /*padding: 40px 65px 45px 65px;*/
+    padding: 3% 3% 5% 3%;
 }
+
