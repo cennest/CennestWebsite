@@ -18,15 +18,15 @@
 }
 
 .ch-img-1 { 
-	background-image: url(../images/about.jpg);	
+	background-image: url(../images/MWC.png);	
 }
 
 .ch-img-2 { 
-	background-image: url(../images/services.jpg);
+	background-image: url(../images/Consulting.jpg);
 }
 
 .ch-img-3 { 
-	background-image: url(../images/portfolio.jpg);
+	background-image: url(../images/Management.jpg);
 }
 
 .ch-img-4 { 
@@ -61,7 +61,7 @@
 	text-transform: uppercase;
 	position: relative;
 	letter-spacing: 2px;
-	font-size: 22px;
+	font-size: 15px;
 	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow: 
 		0 0 1px #fff, 
