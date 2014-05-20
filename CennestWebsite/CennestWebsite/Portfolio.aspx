@@ -6,7 +6,7 @@
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>The Company</span>
+            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>The Company</span>
         </div>
 
         <div class="row-fluid">
@@ -30,7 +30,7 @@
 
         $(document).ready(function () {
 
-            $("#liAboutUs").addClass("active");
+            $("#liServices").addClass("active");
 
         });
 
