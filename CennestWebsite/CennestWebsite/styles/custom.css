@@ -469,6 +469,11 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 
 #decorative2 {z-index:100 !important}
 
+@media (max-width: 1199px) {
+    .ch-grid-container {
+        width: 95%;
+    }
+}
 @media (max-width: 979px) {
      #divLogo {margin-bottom:10px;}
 
@@ -591,7 +596,7 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 
 /* Social Icons */
 
-.social_bookmarks a{ float:left; margin-right:10px;}
+.social_bookmarks a{ float:none; margin-right:10px; display:inline-block;}
 .icon_twitter { width:31px; height:30px; background:url('../icons/twitter1.png')}
 .icon_twitter:hover {background:url('../icons/twitter2.png')}
 .icon_facebook { width:31px; height:30px; background:url('../icons/facebook1.png')}
@@ -629,7 +634,7 @@ margin: 0 auto;
     text-align:right;
 }
 .social_bookmarks{
-    float:left;
+    float:none;
     margin-top:10px;
 }
 .social_bookmarks a div{
@@ -886,9 +891,16 @@ font-size:90%;
     }
 
 }
-
+@media all and (max-width:1199px) and (min-width: 1024px){
+        .ch-grid-container {
+        width: 95% !important;
+    }
+    }
 @media all and (max-width: 1023px) and (min-width: 800px)
 {
+       .ch-grid-container {
+        width: 95% !important;
+    }
     /*Footer Section*/
 
     #divFooter .divPanel #footerArea2 {
@@ -898,7 +910,7 @@ font-size:90%;
     #divFooter .divPanel #footerArea3 {
         width:65%;
     }
-
+    
     /*End Footer Section*/
 }
 
