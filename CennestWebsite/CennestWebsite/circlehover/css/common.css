@@ -2,7 +2,7 @@
 
 .ch-grid-container{
     width:75%;
-    margin:0 auto 4% auto;
+    margin:0 auto 8% auto;
 }
 
 .ch-grid {
@@ -31,6 +31,6 @@
 	margin: 25px;
     border-collapse: separate;
     /*padding: 40px 65px 45px 65px;*/
-    padding: 3% 3% 5% 3%;
+    padding: 3% 3.5% 0% 3.5%;
 }
 
