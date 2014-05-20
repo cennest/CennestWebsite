@@ -60,8 +60,9 @@
                     <div id="divLogo">
                         <%--<a href="index.aspx" id="divSiteTitle">Cennest Technologies</a><br />
                         <a href="index.aspx" id="divTagLine">Disruptive Technologies Simplified!</a>--%>
-                        <a href="index.aspx"><img src="images/logo.png" /></a>
-                        
+                        <a href="index.aspx">
+                            <img src="images/logo.png" /></a>
+
                     </div>
                 </div>
             </div>
@@ -134,21 +135,21 @@
 
                 </div>-->
                     <div class="span3" id="footerArea2">
-                        <div class="row-fluid">
-                <div class="span12">
-                    <div class="social_bookmarks">
-                        <a target="_blank" href="#">
-                            <div class="icon_twitter"></div>
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/pages/Cennest-Technologies/209302679087707">
-                            <div class="icon_facebook"></div>
-                        </a>
-                       <%-- <a target="_blank" href="#">
+                       <%-- <div class="row-fluid">
+                            <div class="span12">--%>
+                                <div class="social_bookmarks">
+                                    <a target="_blank" href="#">
+                                        <div class="icon_twitter"></div>
+                                    </a>
+                                    <a target="_blank" href="https://www.facebook.com/pages/Cennest-Technologies/209302679087707">
+                                        <div class="icon_facebook"></div>
+                                    </a>
+                                    <%-- <a target="_blank" href="#">
                             <div class="icon_google"></div>
                         </a>--%>
-                    </div>
-                </div>
-            </div>
+                                </div>
+                         <%--   </div>
+                        </div>--%>
                         <!--<h3>Recent Blog Posts</h3> 
                     <p>
                         <a href="#" title="">Lorem Ipsum is simply dummy text</a><br />
@@ -166,7 +167,6 @@
                         <a href="#" title="">VIEW ALL POSTS</a>
                     </p>-->
                         <%--<img src="images/logo.png" />--%>
-
                     </div>
                     <div class="span3" id="footerArea3">
 
@@ -178,7 +178,7 @@
                             <li>
                                 <i class="general foundicon-home icon" style="margin-bottom: 50px"></i>
                                 <span class="field">Address:</span>
-                                217 Powai Plaza,Hiranandani Gardens, Powai, Mumbai – 400076
+                                217, Powai Plaza,Hiranandani Gardens, Powai, Mumbai – 400076
 
                             </li>
                             <li>
