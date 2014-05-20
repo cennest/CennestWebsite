@@ -45,7 +45,7 @@
 
         <div class="row-fluid">
             <div><h1 class="text-center orangeText">Our Offerings</h1></div>
-            <div class="span12" id="divMain">
+            <div id="divMain">
                 <div class="ch-grid-container">
                                     <ul class="ch-grid">
                     <li>
