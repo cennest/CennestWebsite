@@ -6,14 +6,14 @@
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Clients</span>
+            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>Clients</span>
         </div>
 
         <div class="row-fluid">
             <div class="span12" id="divMain">
                 <!--Edit Main Content Area here-->
                 <h1>Clients</h1>
-                <img src="images/Cennest-Customers.png" class="img-polaroid noBorder" style="margin: 5px 0px 15px;"/>
+                <img src="images/Cennest-Customers.png" style="margin: 5px 0px 15px;"/>
             </div>
         </div>
         <!--End Main Content Area here-->
