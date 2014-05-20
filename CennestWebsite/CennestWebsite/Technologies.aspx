@@ -6,7 +6,7 @@
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Technologies</span>
+            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>Technologies</span>
         </div>
 
         <div class="row-fluid">
@@ -16,7 +16,7 @@
 
                 <p>We work on Mobile solutions in the most widely used platforms- iOS, Android and Windows Phone . And Cloud platforms like Azure and AWS to deliver solutions easily. We like JavaScript and the libraries built around it in the move towards everything Web and the Internet-of-Things. We like the unified approach of Microsoft stack to help rapidly build solutions rather than focus on plumbing different frameworks.  </p>
                 <p>We love technology but we love solving business needs even more. So our technology choices are always driven by your business needs and not the other way round.</p>
-                <img src="images/TagCloud.png" class="img-polaroid noBorder" style="margin: 5px 0px 15px;">
+                <img src="images/TagCloud.png" style="margin: 5px 0px 15px;">
                 
 
             </div>
@@ -33,7 +33,7 @@
 
         $(document).ready(function () {
 
-            $("#liAboutUs").addClass("active");
+            $("#liServices").addClass("active");
 
         });
 
