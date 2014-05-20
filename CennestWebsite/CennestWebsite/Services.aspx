@@ -17,7 +17,7 @@
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Offerings</span>
+            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>Offerings</span>
         </div>
 
         <div class="row-fluid">
@@ -74,7 +74,7 @@
                     <div class="span4">
                         <div class="box blogs">
                             <%--<i class="general foundicon-website icon"></i>--%>
-                            <h4 class="title"><a>Mobile. Web. Cloud </a></h4>
+                            <h4 class="title  orangeText">Mobile. Web. Cloud</h4>
                             <br />
                             <p class="description text-justify">
                                 We help you in the development of your ideas associated with the three platforms above. If you really think about it, these terms are interlinked and your initiatives will eventually span these three modes for fruition of your vision.
@@ -85,7 +85,7 @@
                     <div class="span4">
                         <div class="box blogs">
                             <%--<i class="general foundicon-checkmark icon"></i>--%>
-                           <h4 class="title"><a>Product Management & Prototyping</a></h4>
+                           <h4 class="title orangeText">Product Management & Prototyping</h4>
                             <br />
                             <p class="description text-justify">
                                 After your great idea but before the product, comes the chasm of uncertainty- thoughts, features, technologies, wireframes, proof-of-concepts. We help you negotiate this territory and focus on what is really, REALLY important to you. 
@@ -96,7 +96,7 @@
                     <div class="span4">
                         <div class="box blogs">
                             <%--<i class="general foundicon-checkmark icon"></i>--%>
-                           <h4 class="title"><a>Technology Consulting</a></h4>
+                           <h4 class="title orangeText">Technology Consulting</h4>
                             <br />
                             <p class="description text-justify">
                                 You have enough things on your plate while managing your big idea. Let us help you by taking care of technology and its rapid changes. We will ensure you receive the best guidance on technology to be able to equip you better.
@@ -132,7 +132,7 @@
 
         $(document).ready(function () {
 
-            
+            $("#liServices").addClass("active");
 
         });
 
