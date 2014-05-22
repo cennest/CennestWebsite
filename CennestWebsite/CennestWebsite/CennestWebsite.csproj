@@ -49,6 +49,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\Recaptcha.dll</HintPath>
     </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="RssToolkit, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>DLL\RssToolkit.dll</HintPath>
@@ -121,18 +124,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2-column.html" />
-    <Content Include="3-column.html" />
-    <Content Include="3-portfolio.html" />
-    <Content Include="about-alt.html" />
-    <Content Include="about.html" />
     <Content Include="Careers.aspx" />
-    <Content Include="Careers.html" />
+    <Content Include="circlehover\images\Consulting.jpg" />
+    <Content Include="circlehover\images\Management.jpg" />
+    <Content Include="circlehover\images\MWC.png" />
     <Content Include="Clients.aspx" />
-    <Content Include="Clients.html" />
     <Content Include="Cloud.aspx" />
     <Content Include="Company.aspx" />
-    <Content Include="Company.html" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
@@ -146,68 +144,36 @@
     <Content Include="circlehover\css\common.css" />
     <Content Include="circlehover\css\demo.css" />
     <Content Include="circlehover\css\normalize.css" />
-    <Content Include="circlehover\css\style.css" />
     <Content Include="circlehover\css\style2.css" />
-    <Content Include="circlehover\css\style3.css" />
-    <Content Include="circlehover\css\style4.css" />
-    <Content Include="circlehover\css\style5.css" />
-    <Content Include="circlehover\css\style6.css" />
-    <Content Include="circlehover\css\style7.css" />
-    <Content Include="circlehover\images\about.jpg" />
     <Content Include="circlehover\images\bg.jpg" />
-    <Content Include="circlehover\images\contact.jpg" />
     <Content Include="circlehover\images\noise.png" />
-    <Content Include="circlehover\images\portfolio.jpg" />
-    <Content Include="circlehover\images\run.jpg" />
-    <Content Include="circlehover\images\services.jpg" />
-    <Content Include="circlehover\index.html" />
-    <Content Include="circlehover\index2.html" />
-    <Content Include="circlehover\index3.html" />
-    <Content Include="circlehover\index4.html" />
-    <Content Include="circlehover\index5.html" />
-    <Content Include="circlehover\index6.html" />
-    <Content Include="circlehover\index7.html" />
     <Content Include="circlehover\js\modernizr.custom.79639.js" />
     <Content Include="circlehover\ReadMe.txt" />
     <Content Include="Contact.aspx" />
-    <Content Include="Contact.html" />
-    <Content Include="contact.php" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\Portfolio.jpg" />
+    <Content Include="images\TagCloud.png" />
+    <Content Include="Portfolio.aspx" />
+    <Content Include="slider-images\Company1.jpg" />
+    <Content Include="slider-images\Company2.jpg" />
+    <Content Include="slider-images\Company3.jpg" />
+    <Content Include="slider-images\Company4.JPG" />
+    <Content Include="slider-images\Company5.jpg" />
+    <Content Include="slider-images\Company6.JPG" />
+    <Content Include="slider-images\Company7.JPG" />
+    <Content Include="Technologies.aspx" />
+    <Content Include="Services.aspx" />
     <Content Include="credits.txt" />
-    <Content Include="directionaware\css\demo.css" />
-    <Content Include="directionaware\css\noJS.css" />
-    <Content Include="directionaware\css\style.css" />
-    <Content Include="directionaware\images\bg.png" />
-    <Content Include="directionaware\images\bloom.jpg" />
-    <Content Include="directionaware\images\blue-gold.jpg" />
-    <Content Include="directionaware\images\break.jpg" />
-    <Content Include="directionaware\images\brooklyn.jpg" />
-    <Content Include="directionaware\images\check.jpg" />
-    <Content Include="directionaware\images\chrysler.jpg" />
-    <Content Include="directionaware\images\ImageAttribution.txt" />
-    <Content Include="directionaware\images\istanbul.jpg" />
-    <Content Include="directionaware\images\love.jpg" />
-    <Content Include="directionaware\images\mono.jpg" />
-    <Content Include="directionaware\images\ny.jpg" />
-    <Content Include="directionaware\images\photo1.jpg" />
-    <Content Include="directionaware\images\sunset.jpg" />
-    <Content Include="directionaware\images\vw.jpg" />
-    <Content Include="directionaware\index.html" />
-    <Content Include="directionaware\index2.html" />
-    <Content Include="directionaware\index3.html" />
-    <Content Include="directionaware\js\jquery.hoverdir.js" />
-    <Content Include="directionaware\js\modernizr.custom.97074.js" />
     <Content Include="DLL\Hammock.ClientProfile.dll" />
     <Content Include="DLL\Recaptcha.dll" />
     <Content Include="DLL\RssToolkit.dll" />
     <Content Include="DLL\SendGridMail.dll" />
     <Content Include="DLL\TweetSharp.dll" />
     <Content Include="EmailTemplates\ContactDetailsTemplate.html" />
-    <Content Include="email\index.php" />
     <Content Include="email\validation.js" />
     <Content Include="FontAwesome\css\font-awesome.css" />
     <Content Include="FontAwesome\css\font-awesome.min.css" />
     <Content Include="FontAwesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="gallery.html" />
     <Content Include="icons-source.txt" />
     <Content Include="icons\ballicons\analytics.png" />
     <Content Include="icons\ballicons\browser.png" />
@@ -226,51 +192,10 @@
     <Content Include="icons\twitter1.png" />
     <Content Include="icons\twitter2.png" />
     <Content Include="image-credits.txt" />
-    <Content Include="images\alone-big.jpg" />
-    <Content Include="images\alone.jpg" />
-    <Content Include="images\amazed-2.jpg" />
-    <Content Include="images\amazed.jpg" />
-    <Content Include="images\boat-big.jpg" />
-    <Content Include="images\boat.jpg" />
-    <Content Include="images\business-team.jpg" />
-    <Content Include="images\calm.jpg" />
     <Content Include="images\Cennest-Customers.png" />
-    <Content Include="images\fashion2-big.jpg" />
-    <Content Include="images\fashion2.jpg" />
-    <Content Include="images\home-image.jpg" />
     <Content Include="images\logo.png" />
-    <Content Include="images\meditation-home.jpg" />
-    <Content Include="images\mondial-big.jpg" />
-    <Content Include="images\mondial.jpg" />
-    <Content Include="images\no-hear.jpg" />
     <Content Include="images\noisy-texture.png" />
-    <Content Include="images\ny.jpg" />
-    <Content Include="images\ny2.jpg" />
-    <Content Include="images\ok.jpg" />
-    <Content Include="images\orangutan-big.jpg" />
-    <Content Include="images\orangutan.jpg" />
-    <Content Include="images\placeholder.gif" />
-    <Content Include="images\placeholder2.gif" />
-    <Content Include="images\placeholder3.jpg" />
-    <Content Include="images\rain-big.jpg" />
-    <Content Include="images\rain.jpg" />
-    <Content Include="images\run.jpg" />
-    <Content Include="images\skateboard-big.jpg" />
-    <Content Include="images\skateboard.jpg" />
-    <Content Include="images\speed.jpg" />
-    <Content Include="images\sunset-big.jpg" />
-    <Content Include="images\sunset.jpg" />
-    <Content Include="images\sweet-fashion.jpg" />
-    <Content Include="images\turbines.jpg" />
-    <Content Include="images\vertical.jpg" />
-    <Content Include="images\vw-big.jpg" />
-    <Content Include="images\vw.jpg" />
-    <Content Include="images\walking-big.jpg" />
-    <Content Include="images\walking.jpg" />
-    <Content Include="index-alt.html" />
     <Content Include="index.aspx" />
-    <Content Include="index.html" />
-    <Content Include="Mobile.aspx" />
     <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Scripts\bootstrap\css\bootstrap-responsive.min.css" />
@@ -451,25 +376,13 @@
     <Content Include="Scripts\yoxview\yoxview-init.js" />
     <Content Include="Scripts\yoxview\yoxview-nojquery.js" />
     <Content Include="Scripts\yoxview\yoxview.css" />
-    <Content Include="Cloud.html" />
-    <Content Include="Mobile.html" />
+    <Content Include="slider-images\bannerImg01.png" />
     <Content Include="styles\jquery.qtip.css" />
     <Content Include="Web.aspx" />
-    <Content Include="Web.html" />
-    <Content Include="slider-images\bannerImg01.png" />
-    <Content Include="slider-images\dancer.jpg" />
-    <Content Include="slider-images\desert.jpg" />
-    <Content Include="slider-images\sunset.jpg" />
     <Content Include="styles\bedge_grunge.png" />
     <Content Include="styles\custom.css" />
     <Content Include="styles\divider.png" />
     <Content Include="styles\mirrored_squares.png" />
-    <Content Include="wide.html" />
-    <Content Include="circlehover\images\Thumbs.db" />
-    <Content Include="directionaware\.DS_Store" />
-    <Content Include="directionaware\css\.DS_Store" />
-    <Content Include="directionaware\images\Thumbs.db" />
-    <Content Include="directionaware\js\.DS_Store" />
     <Content Include="Scripts\fontawesome\font\fontawesome-webfont.eot" />
     <Content Include="Scripts\fontawesome\font\fontawesome-webfont.ttf" />
     <Content Include="Scripts\fontawesome\font\fontawesome-webfont.woff" />
@@ -496,18 +409,13 @@
     <Content Include="FontAwesome\fonts\fontawesome-webfont.woff" />
     <Content Include="FontAwesome\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="page.html" />
-    <Content Include="portfolio-item.html" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="services.html" />
-    <Content Include="video-page.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\prettyphoto\README" />
     <Content Include="Scripts\quicksand\README.textile" />
@@ -588,6 +496,27 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUs.cs" />
+    <Compile Include="Portfolio.aspx.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portfolio.aspx.designer.cs">
+      <DependentUpon>Portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Technologies.aspx.cs">
+      <DependentUpon>Technologies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Technologies.aspx.designer.cs">
+      <DependentUpon>Technologies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -604,13 +533,6 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Mobile.aspx.cs">
-      <DependentUpon>Mobile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mobile.aspx.designer.cs">
-      <DependentUpon>Mobile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web.aspx.cs">
