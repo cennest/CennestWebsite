@@ -51,9 +51,9 @@ namespace CennestWebsite
                 var text = "";
                 SendGrid myMessage = SendGrid.GetInstance(from, to, cc, bcc, subject, html, text);
                 var credentials = new NetworkCredential("azure_6fd25c8728d3ebd3f02ed958b388f8f4@azure.com", "xgon325h");
-                var transportSMTP = SMTP.GetInstance(credentials);
+                var transportWeb = SendGridMail.Transport.Web.GetInstance(credentials);
                 // Send the email.
-                transportSMTP.Deliver(myMessage);
+                transportWeb.Deliver(myMessage);
 
                 return true;
             }
