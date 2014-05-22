@@ -181,11 +181,11 @@
                                 217, Powai Plaza,Hiranandani Gardens, Powai, Mumbai – 400076
 
                             </li>
-                            <li>
+                           <%-- <li>
                                 <i class="general foundicon-mail icon"></i>
                                 <span class="field">Email:</span>
                                 <a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
-                            </li>
+                            </li>--%>
                             <li>
                                 <p class="copyright">Copyright © 2014 Cennest Technologies.</p>
                             </li>
