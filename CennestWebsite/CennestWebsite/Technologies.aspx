@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Technologies.aspx.cs" Inherits="CennestWebsite.Company" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Technologies.aspx.cs" Inherits="CennestWebsite.Technologies" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -6,7 +6,7 @@
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>Technologies</span>
+            <a href="Default.aspx">Home</a> &nbsp;/&nbsp; <span>Technologies</span>
         </div>
 
         <div class="row-fluid">

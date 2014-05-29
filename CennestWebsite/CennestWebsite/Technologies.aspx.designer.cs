@@ -10,6 +10,6 @@
 namespace CennestWebsite {
     
     
-    public partial class Company {
+    public partial class Technologies {
     }
 }
