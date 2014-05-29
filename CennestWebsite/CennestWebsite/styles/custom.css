@@ -286,7 +286,7 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 
 
 
-body {background-image: url(../images/noisy-texture.png); background-color: rgb(181, 181, 181); background-position: inherit inherit; background-repeat: repeat repeat;}
+body {background-image: url(../images/noisy-texture.jpg); background-color: rgb(181, 181, 181); background-position: inherit inherit; background-repeat: repeat repeat;}
 
 #divBoxed {margin-top: 51px;margin-bottom: 51px;}
 
@@ -876,8 +876,11 @@ font-size:90%;
 @media all and (max-width: 979px) {
 
     .ch-grid li {
-        display: block !important;
+        display: table !important;
+        /*display:block !important;*/
+        /*width: 49% !important;*/
         margin: 20px auto !important;
+        /*margin-top: 60px !important;*/
     }
 
     #blogContainer.row-fluid [class*="span4"] {
@@ -912,6 +915,11 @@ font-size:90%;
     }
     
     /*End Footer Section*/
+     .ch-item {
+        width: 200px !important;
+        height: 200px !important;
+        background-position:center center;
+    }
 }
 
 @media all and (max-width: 799px) and (min-width: 600px)
@@ -984,6 +992,12 @@ font-size:90%;
         min-width:50%;
         max-width:50%;
         width:50%;
+    }
+
+     .ch-item {
+        width: 200px !important;
+        height: 200px !important;
+        background-position:center center;
     }
 
 
@@ -1066,6 +1080,12 @@ font-size:90%;
 
     /*End ContactUs Section*/
 
+
+     .ch-item {
+        width: 200px !important;
+        height: 200px !important;
+        background-position:center center;
+    }
 }
 
 @media all and (max-width: 479px)
