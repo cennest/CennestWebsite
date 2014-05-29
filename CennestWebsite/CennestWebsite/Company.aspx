@@ -1,16 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Company.aspx.cs" Inherits="CennestWebsite.Company" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="scripts/carousel/style.css" rel="stylesheet" type="text/css" />
+    <%--<link href="scripts/carousel/style.css" rel="stylesheet" type="text/css" />--%>
     <link href="scripts/camera/css/camera.css" rel="stylesheet" type="text/css" />
-    <link href="scripts/wookmark/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="scripts/yoxview/yoxview.css" rel="stylesheet" type="text/css" />
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>The Company</span>
+            <a href="Default.aspx">Home</a> &nbsp;/&nbsp; <span>The Company</span>
         </div>
 
         <div class="row-fluid">
@@ -54,11 +53,12 @@
     <script src="scripts/easing/jquery.easing.1.3.js" type="text/javascript"></script>
     <script type="text/javascript">function startCamera() { $('#camera_wrap').camera({ fx: 'simpleFade, mosaicSpiralReverse', time: 2000, loader: 'none', playPause: false, navigation: true, height: '38%', pagination: true }); } $(function () { startCamera() });</script>
 
-    <script src="scripts/wookmark/js/jquery.wookmark.js" type="text/javascript"></script>
+   <%-- <script src="scripts/wookmark/js/jquery.wookmark.js" type="text/javascript"></script>
     <script type="text/javascript">$(window).load(function () { var options = { autoResize: true, container: $('#gridArea'), offset: 10 }; var handler = $('#tiles li'); handler.wookmark(options); $('#tiles li').each(function () { var imgm = 0; if ($(this).find('img').length > 0) imgm = parseInt($(this).find('img').not('p img').css('margin-bottom')); var newHeight = $(this).find('img').height() + imgm + $(this).find('div').height() + $(this).find('h4').height() + $(this).find('p').not('blockquote p').height() + $(this).find('iframe').height() + $(this).find('blockquote').height() + 5; if ($(this).find('iframe').height()) newHeight = newHeight + 15; $(this).css('height', newHeight + 'px'); }); handler.wookmark(options); handler.wookmark(options); });</script>
     <script src="scripts/yoxview/yox.js" type="text/javascript"></script>
     <script src="scripts/yoxview/jquery.yoxview-2.21.js" type="text/javascript"></script>
     <script type="text/javascript">$(document).ready(function () { $('.yoxview').yoxview({ autoHideInfo: false, renderInfoPin: false, backgroundColor: '#ffffff', backgroundOpacity: 0.8, infoBackColor: '#000000', infoBackOpacity: 1 }); $('.yoxview a img').hover(function () { $(this).animate({ opacity: 0.7 }, 300) }, function () { $(this).animate({ opacity: 1 }, 300) }); });</script>
+    --%>
     <script type="text/javascript">
 
         $(document).ready(function () {
