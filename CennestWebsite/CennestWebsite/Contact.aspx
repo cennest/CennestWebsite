@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div id="feeds">
-                        <h4>Recent posts</h4>
+                        <h4>Recent Posts</h4>
                         <div class="OpenSans-Bold f80 ml5">
                             <p>
                                 <%--<a target="_blank" href="https://www.google.co.in/maps/preview#!q=105+Central+Way%2C+Suite+202+|+Kirkland%2C+WA+98033&data=!4m15!2m14!1m13!1s0x549012e76d0bfcd9%3A0xdfc8c43e42877c3d!3m8!1m3!1d3343561!2d76.7751435!3d18.8154265!3m2!1i1024!2i664!4f13.1!4m2!3d47.6762409!4d-122.2079862">@ViewBag.contactUsAddress</a>--%>
