@@ -6,7 +6,7 @@
     <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="index.aspx">Home</a> &nbsp;/&nbsp; <span>Join Us</span>
+            <a href="Default.aspx">Home</a> &nbsp;/&nbsp; <span>Join Us</span>
         </div>
 
         <div class="row-fluid">
