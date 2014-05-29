@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8">
-    <title>Cennest Technologies|Making Sense of Disruptive Technologies</title>
+    <title>Cennest Technologies| Making Sense of Disruptive Technologies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Html5TemplatesDreamweaver.com">
@@ -19,8 +19,8 @@
     <![endif]-->
 
     <!-- Icons -->
-    <link href="scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />
+    <%--<link href="scripts/icons/general/stylesheets/general_foundicons.css" media="screen" rel="stylesheet" type="text/css" />--%>
+    <%--<link href="scripts/icons/social/stylesheets/social_foundicons.css" media="screen" rel="stylesheet" type="text/css" />--%>
     <!--[if lt IE 8]>
         <link href="scripts/icons/general/stylesheets/general_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="scripts/icons/social/stylesheets/social_foundicons_ie7.css" media="screen" rel="stylesheet" type="text/css" />
@@ -60,7 +60,7 @@
                     <div id="divLogo">
                         <%--<a href="index.aspx" id="divSiteTitle">Cennest Technologies</a><br />
                         <a href="index.aspx" id="divTagLine">Disruptive Technologies Simplified!</a>--%>
-                        <a href="index.aspx">
+                        <a href="Default.aspx">
                             <img src="images/logo.png" /></a>
 
                     </div>
