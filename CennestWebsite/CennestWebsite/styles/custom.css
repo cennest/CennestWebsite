@@ -873,6 +873,17 @@ font-size:90%;
     margin-bottom:20%;
 }
 
+
+ #services .ch-item{
+         box-shadow:none;
+         cursor:default;
+     }
+
+     #services .ch-item:hover{
+         box-shadow:none;
+     }
+
+
 @media all and (max-width: 979px) {
 
     .ch-grid li {
@@ -898,6 +909,14 @@ font-size:90%;
         .ch-grid-container {
         width: 95% !important;
     }
+        #services li {
+        padding:0;
+    }
+         .ch-item {
+        width: 200px !important;
+        height: 200px !important;
+        background-position:center center;
+    }
     }
 @media all and (max-width: 1023px) and (min-width: 800px)
 {
@@ -919,6 +938,14 @@ font-size:90%;
         width: 200px !important;
         height: 200px !important;
         background-position:center center;
+    }
+
+    /* Services Section */
+    .blogs h4 {
+        height: 20px;
+    }
+    #services li {
+        padding:0;
     }
 }
 
@@ -999,8 +1026,11 @@ font-size:90%;
         height: 200px !important;
         background-position:center center;
     }
-
-
+    
+      /* Services Section */
+    .blogs h4 {
+        height: 20px;
+    }
 }
 
 @media all and (max-width: 599px)
@@ -1080,12 +1110,18 @@ font-size:90%;
 
     /*End ContactUs Section*/
 
-
      .ch-item {
         width: 200px !important;
         height: 200px !important;
         background-position:center center;
     }
+
+      /* Services Section */
+    .blogs h4 {
+        height: 50px;
+    }
+
+     
 }
 
 @media all and (max-width: 479px)
