@@ -10,6 +10,6 @@
 namespace CennestWebsite {
     
     
-    public partial class index {
+    public partial class Services {
     }
 }
