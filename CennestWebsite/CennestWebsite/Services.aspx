@@ -1,15 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Services.aspx.cs" Inherits="CennestWebsite.Services" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    
-    <link href="scripts/wookmark/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="scripts/yoxview/yoxview.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" type="text/css" href="circlehover/css/common.css" />
     <link rel="stylesheet" type="text/css" href="circlehover/css/style2.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
-    
-    <!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="divPanel notop page-content page-container">
@@ -28,9 +24,9 @@
         <div class="row-fluid">
             <div class="span12" id="divMain">
 
-                <ul class="ch-grid">
+                <ul class="ch-grid" id="services">
                     <li>
-                        <div class="roundImage ch-img-1">
+                        <div class="roundImage ch-img-1 ch-item">
                             <%--<div class="ch-info">
                                 <a href="about.html">
                                     <h3>Mobile. Web. Cloud</h3>
@@ -39,7 +35,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="roundImage ch-img-2">
+                        <div class="roundImage ch-img-2 ch-item">
                             <%--<div class="ch-info">
                                 <h3>Product Management & Prototyping</h3>
                                 <p><a href="services.html">Read More</a></p>
@@ -47,7 +43,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="roundImage ch-img-3">
+                        <div class="roundImage ch-img-3 ch-item">
                             <%--<div class="ch-info">
                                 <h3>Technology Consulting</h3>
                                 <p><a href="gallery.html">Read More</a></p>
@@ -83,7 +79,7 @@
                     <div class="span4">
                         <div class="box blogs">
                             <%--<i class="general foundicon-checkmark icon"></i>--%>
-                           <h4 class="title orangeText">Product Management & Prototyping</h4>
+                            <h4 class="title orangeText">Product Management & Prototyping</h4>
                             <br />
                             <p class="description text-justify">
                                 After your great idea but before the product, comes the chasm of uncertainty- thoughts, features, technologies, wireframes, proof-of-concepts. We help you negotiate this territory and focus on what is really, REALLY important to you. 
@@ -94,7 +90,7 @@
                     <div class="span4">
                         <div class="box blogs">
                             <%--<i class="general foundicon-checkmark icon"></i>--%>
-                           <h4 class="title orangeText">Technology Consulting</h4>
+                            <h4 class="title orangeText">Technology Consulting</h4>
                             <br />
                             <p class="description text-justify">
                                 You have enough things on your plate while managing your big idea. Let us help you by taking care of technology and its rapid changes. We will ensure you receive the best guidance on technology to be able to equip you better.
@@ -113,7 +109,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
-    <script type="text/javascript" src="circlehover/js/modernizr.custom.79639.js"></script>
+    <%--<script type="text/javascript" src="circlehover/js/modernizr.custom.79639.js"></script>--%>
     <script type="text/javascript">
 
         $(document).ready(function () {
