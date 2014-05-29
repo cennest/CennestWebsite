@@ -25,7 +25,8 @@
 }
 
 .ch-grid li {
-	width: 215px;
+    width: 33.33%;
+	/*width: 215px;*/
 	height: 215px;
 	display: table-cell;
 	margin: 25px;
