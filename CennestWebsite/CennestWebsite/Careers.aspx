@@ -14,7 +14,7 @@
                 <!--Edit Main Content Area here-->
                 <h1>Join Us</h1>
 
-                <p>Of course, you need to atleast know how to code in an OOP-based language. Besides that though, you are excited about being in an always-learning mode and enjoy technology, you can see patterns emerging around you and you are not wedded to any specific technology. See of you can cope with our work by looking at our blogs and then drop us a mail with your resume at careers@cennest.com .</p>
+                <p>Of course, you need to atleast know how to code in an OOP-based language. Besides that though, you are excited about being in an always-learning mode and enjoy technology, you can see patterns emerging around you and you are not wedded to any specific technology. See of you can cope with our work by looking at <a href="http://cennest.com/weblog">our blogs</a> and then drop us a mail with your resume at careers@cennest.com .</p>
                 <%--<img src="images/turbines.jpg" class="img-polaroid" style="margin: 5px 0px 15px;">--%>
 
             </div>
