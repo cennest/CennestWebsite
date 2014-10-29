@@ -39,9 +39,9 @@ namespace CennestWebsite
             try
             {
                 var from = new MailAddress("admin@cennest.com");
-                var to = new MailAddress[] { new MailAddress("poulomee@cennest.com") };
-                var cc = new MailAddress[] { new MailAddress("poulomee@cennest.com") };
-                var bcc = new MailAddress[] { new MailAddress("sonal.tirlotkar@cennest.com") };
+                var to = new MailAddress[] { new MailAddress("daksh@cennest.com") };
+                var cc = new MailAddress[] { new MailAddress("anshulee@cennest.com") };
+                var bcc = new MailAddress[] { new MailAddress("poulomee@cennest.com") };
                 string subject = this.MessageSubject;
                 string messageBody = GetMailTemplate();
                 messageBody = messageBody.Replace("[USERNAME]", this.Name);
