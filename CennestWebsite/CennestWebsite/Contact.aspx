@@ -82,24 +82,26 @@
                         </div>
                     </div>
                     <div id="feeds">
-                        <h4>Recent Posts</h4>
+                        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+
+                        </script>
+                        <div style="overflow:hidden;height:355px;width:355px;"><div id="gmap_canvas" style="height:355px;width:355px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.mapsembed.com/otto/" id="get-map-data">http://www.mapsembed.com/otto/</a></div><script type="text/javascript"> function init_map() { var myOptions = { zoom: 15, center: new google.maps.LatLng(19.122692, 72.91329659999997), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(19.122692, 72.91329659999997) }); infowindow = new google.maps.InfoWindow({ content: "<b>Cennest Technologies</b><br/>Powai Plaza,Hiranandani Gardens, Powai,<br/>400076 Mumbai" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
+                        
+                        <%--<h4>Recent Posts</h4>
                         <div class="OpenSans-Bold f80 ml5">
                             <p>
-                                <%--<a target="_blank" href="https://www.google.co.in/maps/preview#!q=105+Central+Way%2C+Suite+202+|+Kirkland%2C+WA+98033&data=!4m15!2m14!1m13!1s0x549012e76d0bfcd9%3A0xdfc8c43e42877c3d!3m8!1m3!1d3343561!2d76.7751435!3d18.8154265!3m2!1i1024!2i664!4f13.1!4m2!3d47.6762409!4d-122.2079862">@ViewBag.contactUsAddress</a>--%>
                                 <a target="_blank" href="<%= ViewState["Link1"] %>"><%= ViewState["BlogTitle1"] %></a>
                                 <span class="posted-date"><%= ViewState["BlogDate1"] %></span>
                             </p>
                             <p>
-                                <%--<a href="mailto:info@insideradius.com">@ViewBag.contactUsEmailID</a>--%>
                                 <a target="_blank" href="<%= ViewState["Link2"] %>"><%= ViewState["BlogTitle2"] %></a>
                                 <span class="posted-date"><%= ViewState["BlogDate2"] %></span>
                             </p>
                             <p>
-                                <%--<span>@ViewBag.contactUsPhone</span><span class="ml3" id="faxNumber">@ViewBag.contactUsFax</span>--%>
                                 <a target="_blank" href="<%= ViewState["Link3"] %>"><%= ViewState["BlogTitle3"] %></a>
                                 <span class="posted-date"><%= ViewState["BlogDate3"] %></span>
                             </p>
-                        </div>
+                        </div>--%>
 
                     </div>
                 </section>
