@@ -14,7 +14,7 @@ namespace CennestWebsite
         {
             try
             {
-                //RssDocument rss = RssDocument.Load(new Uri("http://cennest.com/?feed=rss2"));
+                //RssDocument rss = RssDocument.Load(new Uri("http://cennest.com/weblog/?feed=rss2"));
                 //if (rss != null && rss.Channel != null && rss.Channel.Items != null)
                 //{
                 //    ViewState["BlogDate1"] = String.Format("Posted on {0:M} {0:dd}, {0:yyyy}", rss.Channel.Items[0].PubDateParsed.ToLocalTime());
