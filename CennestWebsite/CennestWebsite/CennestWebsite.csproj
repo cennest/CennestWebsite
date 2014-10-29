@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,6 +29,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +39,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Hammock.ClientProfile">
@@ -62,13 +66,11 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -119,6 +121,7 @@
     <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="TweetSharp">
       <HintPath>..\packages\TweetSharp.2.3.1\lib\4.0\TweetSharp.dll</HintPath>
     </Reference>
@@ -129,7 +132,6 @@
     <Content Include="circlehover\images\Management.jpg" />
     <Content Include="circlehover\images\MWC.png" />
     <Content Include="Clients.aspx" />
-    <Content Include="Cloud.aspx" />
     <Content Include="Company.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
@@ -150,10 +152,13 @@
     <Content Include="circlehover\js\modernizr.custom.79639.js" />
     <Content Include="circlehover\ReadMe.txt" />
     <Content Include="Contact.aspx" />
+    <Content Include="Blogs.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="images\noisy-texture.jpg" />
     <Content Include="images\Portfolio.jpg" />
     <Content Include="images\TagCloud.png" />
     <Content Include="Portfolio.aspx" />
+    <Content Include="slider-images\bannerImg01.jpg" />
     <Content Include="slider-images\Company1.jpg" />
     <Content Include="slider-images\Company2.jpg" />
     <Content Include="slider-images\Company3.jpg" />
@@ -175,27 +180,14 @@
     <Content Include="FontAwesome\css\font-awesome.min.css" />
     <Content Include="FontAwesome\fonts\fontawesome-webfont.svg" />
     <Content Include="icons-source.txt" />
-    <Content Include="icons\ballicons\analytics.png" />
-    <Content Include="icons\ballicons\browser.png" />
-    <Content Include="icons\ballicons\bubbles.png" />
-    <Content Include="icons\ballicons\clock.png" />
-    <Content Include="icons\ballicons\graph.png" />
-    <Content Include="icons\ballicons\imac.png" />
-    <Content Include="icons\ballicons\man.png" />
-    <Content Include="icons\ballicons\target.png" />
     <Content Include="icons\facebook1.png" />
     <Content Include="icons\facebook2.png" />
-    <Content Include="icons\google1.png" />
-    <Content Include="icons\google2.png" />
-    <Content Include="icons\pinterest1.png" />
-    <Content Include="icons\pinterest2.png" />
     <Content Include="icons\twitter1.png" />
     <Content Include="icons\twitter2.png" />
     <Content Include="image-credits.txt" />
     <Content Include="images\Cennest-Customers.png" />
     <Content Include="images\logo.png" />
-    <Content Include="images\noisy-texture.png" />
-    <Content Include="index.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="Scripts\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Scripts\bootstrap\css\bootstrap-responsive.min.css" />
@@ -229,10 +221,6 @@
     <Content Include="Scripts\fontawesome\css\font-awesome.css" />
     <Content Include="Scripts\fontawesome\css\font-awesome.min.css" />
     <Content Include="Scripts\fontawesome\css\prettify.css" />
-    <Content Include="Scripts\icons\general\demo.html" />
-    <Content Include="Scripts\icons\general\fonts\general_foundicons.svg" />
-    <Content Include="Scripts\icons\general\stylesheets\general_foundicons.css" />
-    <Content Include="Scripts\icons\general\stylesheets\general_foundicons_ie7.css" />
     <Content Include="Scripts\icons\social\demo.html" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.svg" />
     <Content Include="Scripts\icons\social\stylesheets\social_foundicons.css" />
@@ -376,9 +364,7 @@
     <Content Include="Scripts\yoxview\yoxview-init.js" />
     <Content Include="Scripts\yoxview\yoxview-nojquery.js" />
     <Content Include="Scripts\yoxview\yoxview.css" />
-    <Content Include="slider-images\bannerImg01.png" />
     <Content Include="styles\jquery.qtip.css" />
-    <Content Include="Web.aspx" />
     <Content Include="styles\bedge_grunge.png" />
     <Content Include="styles\custom.css" />
     <Content Include="styles\divider.png" />
@@ -396,10 +382,6 @@
     <Content Include="Scripts\fontawesome\font\proximanova-webfont.eot" />
     <Content Include="Scripts\fontawesome\font\proximanova-webfont.ttf" />
     <Content Include="Scripts\fontawesome\README.md" />
-    <Content Include="Scripts\icons\general\fonts\general_foundicons.eot" />
-    <Content Include="Scripts\icons\general\fonts\general_foundicons.ttf" />
-    <Content Include="Scripts\icons\general\fonts\general_foundicons.woff" />
-    <Content Include="Scripts\icons\social\fonts\.DS_Store" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.eot" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.ttf" />
     <Content Include="Scripts\icons\social\fonts\social_foundicons.woff" />
@@ -408,6 +390,14 @@
     <Content Include="FontAwesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="FontAwesome\fonts\fontawesome-webfont.woff" />
     <Content Include="FontAwesome\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\CennestWebsite.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite1.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite2.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite3.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite4.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite5.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite6.pubxml" />
+    <None Include="Properties\PublishProfiles\CennestWebsite7.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -416,7 +406,9 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\prettyphoto\README" />
     <Content Include="Scripts\quicksand\README.textile" />
     <Content Include="Scripts\vegas\README.md" />
@@ -474,13 +466,6 @@
     <Compile Include="Clients.aspx.designer.cs">
       <DependentUpon>Clients.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cloud.aspx.cs">
-      <DependentUpon>Cloud.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cloud.aspx.designer.cs">
-      <DependentUpon>Cloud.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Company.aspx.cs">
       <DependentUpon>Company.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -496,6 +481,13 @@
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUs.cs" />
+    <Compile Include="Blogs.aspx.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blogs.aspx.designer.cs">
+      <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Portfolio.aspx.cs">
       <DependentUpon>Portfolio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -520,12 +512,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -535,16 +527,11 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web.aspx.cs">
-      <DependentUpon>Web.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web.aspx.designer.cs">
-      <DependentUpon>Web.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\icons\general\fonts\" />
+    <Folder Include="Scripts\icons\general\stylesheets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
@@ -561,6 +548,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -570,7 +560,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>5309</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:11279/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
