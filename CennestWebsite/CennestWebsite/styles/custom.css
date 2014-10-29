@@ -247,7 +247,7 @@ img {max-width:100%;height:auto;width:auto;-moz-box-sizing:border-box;-webkit-bo
 .shout-box h2 {
 	font: 23px/22px 'Source Sans Pro', sans-serif;
 	color:#222;
-	margin-topm:10px;
+	margin-top:10px;
 	margin-bottom:10px;
 }
 .shout-box p {
@@ -338,7 +338,7 @@ body {background-image: url(../images/noisy-texture.jpg); background-color: rgb(
 
 .sidebox {-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;box-shadow:0 1px 3px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;background-color:rgb(250, 250, 250);color:rgb(51, 51, 51);border-width:1px;border-style:solid;border-color:rgb(255, 255, 255);border-radius:3px;padding:18px;margin-top:11px; font-family: 'Maven Pro', sans-serif; font-size: 14px;}
 
-.sidebar {padding-top: 8px;;;}
+.sidebar {padding-top: 8px;}
 
 .sidebox-title {line-height: 36px; font-weight: normal; font-style: normal; font-family: 'Open Sans'; color: rgb(51, 51, 51); font-size: 22px; text-transform: none;}
 
@@ -346,7 +346,7 @@ body {background-image: url(../images/noisy-texture.jpg); background-color: rgb(
 
 #divFooter{font-size: 13px; font-family: 'Maven Pro', sans-serif; background-image: url(bedge_grunge.png); background-repeat: repeat repeat;}
 
-.divPanel {padding: 40px;;;}
+.divPanel {padding: 40px;}
 
 #divFooter a {color: rgb(224, 91, 73); font-size: 13px; font-family: 'Maven Pro', sans-serif;}
 
@@ -354,7 +354,7 @@ body {background-image: url(../images/noisy-texture.jpg); background-color: rgb(
 
 h2 {font-weight: normal; font-style: normal; color: rgb(69, 68, 68); font-family: 'Source Sans Pro', sans-serif; font-size: 35px; line-height: 50px;}
 
-.transparent-bg {-moz-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px;   background-color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;;}
+.transparent-bg {-moz-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px; -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px;   background-color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;}
 
 .breadcrumbs {font-size: 14px; line-height: 25px; margin-top: 0px; font-family: 'Maven Pro', sans-serif;}
 
@@ -401,7 +401,7 @@ a.btn, a.btn-large, a.btn-small, a.btn-mini {color:#333}
 
  .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {background-color:#d1a000 !important;}
 
-#divHeaderText {padding: 0px 0px 20px; border-color: rgb(51, 51, 51); text-align: center;;}
+#divHeaderText {padding: 0px 0px 20px; border-color: rgb(51, 51, 51); text-align: center;}
 
 #contentInnerSeparator{margin-top: -10px; margin-bottom: 0px; border-top-color: rgb(255, 255, 255); border-top-width: 0px; border-top-style: solid; height: 0px;}
 
@@ -457,21 +457,14 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
 
 .ddmenu .dropdown-menu li a {font-family: 'Open Sans'; line-height: 26px; font-size: 13px;} 
 
-.camera_caption {font-size: 14px; font-family: Oxygen, sans-serif; letter-spacing: 1px; line-height: 21px;}
-
-.lead h2 {font-size: 40px; line-height: 60px; color: rgb(69, 68, 68); font-family: 'Source Sans Pro', sans-serif;}
-
-.lead h3 {font-size: 23px; color: rgb(69, 68, 68); font-family: 'Source Sans Pro', sans-serif;}
-
-.dropdown-menu .sub-menu {left:100%;position:absolute;top:0;visibility:hidden;margin-top:-1px;}
-.dropdown-menu li:hover .sub-menu {visibility:visible;}
 .navbar .btn-navbar-highlight {display:none;width:100%}
-
-#decorative2 {z-index:100 !important}
 
 @media (max-width: 1199px) {
     .ch-grid-container {
         width: 95%;
+    }
+    #contactus #feeds {
+        width:40% !important;
     }
 }
 @media (max-width: 979px) {
@@ -497,8 +490,10 @@ h6,.page-content h6 a {font-weight: normal; font-style: normal; font-family: 'So
     #decorative2 {position:static;  height:auto;}
 
     body {padding-top:0px}
-
-
+    #contactus #feeds {
+        width:99% !important;
+    }
+  
 }
 
 
@@ -703,11 +698,12 @@ margin: 0 auto;
     #contactus #feeds {
         float:right;
         height: 280px;
+        color: #000;
         /*border: 1px solid brown;*/
-        color: #9DC2DD /*7AA6C3*/;
+        /*color: #9DC2DD;*/ /*7AA6C3*/
         /*padding: 1% 5% 0 20%;*/
         padding:0;
-        width: 30%;
+        /*width: 30%;*/
     }
 
      #contactus #feeds h4{
