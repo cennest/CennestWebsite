@@ -20,9 +20,9 @@
                 <!--Edit Camera Slider here-->
                 <div class="camera_full_width">
                     <div id="camera_wrap" class="shadow">
-                        <div data-src="slider-images/bannerImg01.png"></div>
-                        <div data-src="slider-images/bannerImg01.png"></div>
-                        <div data-src="slider-images/bannerImg01.png"></div>
+                        <div data-src="slider-images/bannerImg01.jpg"></div>
+                        <div data-src="slider-images/bannerImg01.jpg"></div>
+                        <div data-src="slider-images/bannerImg01.jpg"></div>
                     </div>
                     <br style="clear: both" />
                     <div style="margin-bottom: 40px"></div>
@@ -78,7 +78,7 @@
                 </div>
 
 
-                <hr>
+                <hr/>
                 <div><h1 class="text-center orangeText">Technical Updates</h1></div>
                 <!--Edit Main Content here-->
                 <div id="blogContainer" class="row-fluid">
