@@ -13,6 +13,7 @@
             <div class="span12" id="divMain">
                 <section id="contactus">
                     <h1>Contact Us</h1>
+                    <div id="contactusWrapper">
                     <div id="contactusSection">
                         <div id="contactusForm">
                             <form runat="server">
@@ -81,21 +82,35 @@
                             </form>
                         </div>
                     </div>
-                    <div id="feeds">
+                    <div id="feeds" class="position-relative">
+                         <img src="styles/Daksh_sir_new.png" id="founder_Pic" />
                         <div id="contactDetails">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, 
-                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
-                            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                            Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <h2>Feel free to reach out at</h2>
+                            <div class="margin-bottom-1px">
+                                <span class="margin-right-5px"><img src="styles/Skype_logo.png" /></span><span><b>daksh.pasbola</b></span>
+                            </div>
+                            <div class="margin-bottom-1px">
+                                <span class="margin-right-5px"><img src="styles/phone_logo.png" /></span><span><b>+91 9867840188</b></span>
+                            </div>
+                            <div>
+                                <span class="margin-right-5px"><a href="mailto:daksh@cennest.com"><img src="styles/Email_logo.png" /></a></span><span><b><a href="mailto:daksh@cennest.com">daksh@cennest.com</a></b></span>
+                            </div>
                         </div>
-                        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+                      <%--  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
 
                         </script>
-                        <div style="overflow:hidden;height:355px;width:355px;"><div id="gmap_canvas" style="height:355px;width:355px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.mapsembed.com/otto/" id="get-map-data">http://www.mapsembed.com/otto/</a></div><script type="text/javascript"> function init_map() { var myOptions = { zoom: 15, center: new google.maps.LatLng(19.122692, 72.91329659999997), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(19.122692, 72.91329659999997) }); infowindow = new google.maps.InfoWindow({ content: "<b>Cennest Technologies</b><br/>Powai Plaza,Hiranandani Gardens, Powai,<br/>400076 Mumbai" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
-                        
+                        <div style="overflow: hidden; height: 355px; width: 355px;">
+                            <div id="gmap_canvas" style="height: 355px; width: 355px;"></div>
+                            <style>
+                                #gmap_canvas img {
+                                    max-width: none !important;
+                                    background: none !important;
+                                }
+                            </style>
+                            <a class="google-map-code" href="http://www.mapsembed.com/otto/" id="get-map-data">http://www.mapsembed.com/otto/</a>
+                        </div>
+                        <script type="text/javascript"> function init_map() { var myOptions = { zoom: 15, center: new google.maps.LatLng(19.122692, 72.91329659999997), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(19.122692, 72.91329659999997) }); infowindow = new google.maps.InfoWindow({ content: "<b>Cennest Technologies</b><br/>Powai Plaza,Hiranandani Gardens, Powai,<br/>400076 Mumbai" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>--%>
+
                         <%--<h4>Recent Posts</h4>
                         <div class="OpenSans-Bold f80 ml5">
                             <p>
@@ -111,8 +126,8 @@
                                 <span class="posted-date"><%= ViewState["BlogDate3"] %></span>
                             </p>
                         </div>--%>
-
                     </div>
+                        </div>
                 </section>
             </div>
         </div>
@@ -150,7 +165,7 @@
 
         function DesignAccordingToBrowserWith() {
             if (matchMedia('only screen and (max-width: 400px)').matches) {
-                
+
                 if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
 
                     $("#<%=formSumbitResult.ClientID%>").val("");
@@ -214,73 +229,73 @@
 
                 }
 
-            }
-            else {
-                
-                if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
-
-                    $("#<%=formSumbitResult.ClientID%>").val("");
-
-                    $("#<%=btnSubmit.ClientID%>").qtip({
-                        content: 'Your message has been submitted successfully.',
-                        style: {
-                            classes: 'success-message'
-                        },
-                        show: {
-                            when: 'click',
-                            ready: true
-                        },
-                        hide: false,
-                        position: {
-                            my: 'center left',  // Position my top left...
-                            at: 'center right', // at the bottom right of...
-                            target: $("#<%=btnSubmit.ClientID%>"), // my target
-                            adjust: {
-                                x: 10
-                            }
-                        }
-                    });
-
-                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
-
-                    setTimeout(function () {
-                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
-                    }, 5000);
-
-                }
-                else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
-
-                    $("#<%=formSumbitResult.ClientID%>").val("");
-
-                    $("#<%=btnSubmit.ClientID%>").qtip({
-                        content: 'An error occured please try again.',
-                        style: {
-                            classes: 'error-message'
-                        },
-                        show: {
-                            when: 'click',
-                            ready: true
-                        },
-                        hide: false,
-                        position: {
-                            my: 'center left',  // Position my top left...
-                            at: 'center right', // at the bottom right of...
-                            target: $("#<%=btnSubmit.ClientID%>"), // my target
-                            adjust: {
-                                x: 10
-                            }
-                        }
-                    });
-
-                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
-
-                    setTimeout(function () {
-                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
-                    }, 5000);
-
-                }
-            }
         }
+        else {
+
+            if ($("#<%=formSumbitResult.ClientID%>").val() == "true") {
+
+                    $("#<%=formSumbitResult.ClientID%>").val("");
+
+                $("#<%=btnSubmit.ClientID%>").qtip({
+                    content: 'Your message has been submitted successfully.',
+                    style: {
+                        classes: 'success-message'
+                    },
+                    show: {
+                        when: 'click',
+                        ready: true
+                    },
+                    hide: false,
+                    position: {
+                        my: 'center left',  // Position my top left...
+                        at: 'center right', // at the bottom right of...
+                        target: $("#<%=btnSubmit.ClientID%>"), // my target
+                        adjust: {
+                            x: 10
+                        }
+                    }
+                });
+
+                $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                setTimeout(function () {
+                    $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                }, 5000);
+
+            }
+            else if ($("#<%=formSumbitResult.ClientID%>").val() == "false") {
+
+                $("#<%=formSumbitResult.ClientID%>").val("");
+
+                    $("#<%=btnSubmit.ClientID%>").qtip({
+                        content: 'An error occured please try again.',
+                        style: {
+                            classes: 'error-message'
+                        },
+                        show: {
+                            when: 'click',
+                            ready: true
+                        },
+                        hide: false,
+                        position: {
+                            my: 'center left',  // Position my top left...
+                            at: 'center right', // at the bottom right of...
+                            target: $("#<%=btnSubmit.ClientID%>"), // my target
+                            adjust: {
+                                x: 10
+                            }
+                        }
+                    });
+
+                    $('html, body').animate({ scrollTop: $("#<%=btnSubmit.ClientID%>").offset().top });
+
+                    setTimeout(function () {
+                        $("#<%=btnSubmit.ClientID%>").qtip('destroy');
+                    }, 5000);
+
+                }
+        }
+    }
 
     </script>
 
