@@ -1244,6 +1244,10 @@ h6, .page-content h6 a {
 /*-----------------------Cennest Modifications--------------------------------------*/
 
 /*General Classes*/
+.margin-top-50px {
+margin-top:50px;
+}
+
 .margin-right-5px {
     margin-right: 5px;
 }
@@ -1316,8 +1320,9 @@ p.copyright {
 
     #contactus #contactusSection {
         width: 55%;
-        padding: 0 1%;
+        /*padding: 0 1%;*/
         float: left;
+        padding-left: 78px;
     }
 
 
@@ -1336,6 +1341,9 @@ p.copyright {
             text-shadow: 1px 0px 1px #D8D8D8;
             font-size: 90%;
             margin-left: 1%;
+            position: relative;
+            top: -4px;
+            cursor:default;
         }
 
         #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
@@ -1362,7 +1370,7 @@ p.copyright {
         /*color: #9DC2DD;*/ /*7AA6C3*/
         /*padding: 1% 5% 0 20%;*/
         padding: 0;
-        width: 40%;
+        width: 37%;
     }
 
         #contactus #feeds h4 {
@@ -1402,8 +1410,8 @@ p.copyright {
                 height: 101px;
                 border-radius: 50%;
                 position: absolute;
-                right: -52px;
-                top: 60px;
+                right: -49px;
+                top: 43px;
             }
 
         #contactus #feeds #contactDetails {
@@ -1594,7 +1602,7 @@ p.copyright {
     }
 
     #contactus #feeds {
-        width: 50% !important;
+        /*width: 50% !important;*/
     }
 }
 
@@ -1620,30 +1628,32 @@ p.copyright {
 
     /*ContactUs*/
     #contactus #contactusWrapper {
-        position: relative;
-        height: 72em;
+        /*position: relative;
+        height: 72em;*/
         width: 99% !important;
     }
 
     #contactus #contactusSection {
-        position: absolute;
-        bottom: 0;
+        /*position: absolute;
+        bottom: 0;*/
+        padding-left: 0;
         width: 100% !important;
+        margin-top:50px;
     }
 
     #contactus #feeds {
-        position: absolute;
-        top: 0;
+        /*position: absolute;
+        top: 0;*/
         width: 100% !important;
     }
 
         #contactus #feeds img#founder_Pic {
-            right: -21px;
+            right: 8px;
             top: 35px;
         }
 
         #contactus #feeds #contactDetails {
-            width: 100%;
+            width: 94%;
         }
 }
 
@@ -1757,7 +1767,7 @@ p.copyright {
     #contactus #feeds {
         width: 100%;
         padding: 0;
-        margin: 40px 0 0;
+        /*margin: 40px 0 0;*/
     }
 
         /*#contactus #feeds #contactDetails h2 {
@@ -1831,11 +1841,12 @@ p.copyright {
     }
 
         #contactus #contactusWrapper {
-            height: 70em;
+            /*height: 70em;*/
         }
 
         #contactus #contactusSection {
-            width: 100%;
+            /*width: 100%;*/
+            display:none;
         }
 
         #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
@@ -1850,7 +1861,7 @@ p.copyright {
         #contactus #feeds {
             width: 100%;
             padding: 0;
-            margin: 40px 0 0;
+            /*margin: 40px 0 0;*/
         }
 
             #contactus #feeds img#founder_Pic {
@@ -1960,7 +1971,7 @@ p.copyright {
 
 
         #contactus #contactusSection {
-            width: 100%;
+            /*width: 100%;*/
         }
 
 
@@ -1976,7 +1987,7 @@ p.copyright {
         #contactus #feeds {
             width: 90%;
             padding: 0;
-            margin: 40px 0 0;
+            /*margin: 40px 0 0;*/
             display: table;
             float: left;
         }
@@ -1986,6 +1997,11 @@ p.copyright {
                 padding-right: 0;
             }
 
+            #contactus #captcha-wrapper #recaptcha_image,
+            #contactus #captcha-wrapper #recaptcha_image img
+            {
+                width: 114% !important;
+            }
                 /*#contactus #feeds #contactDetails h2 {
                     font-size: 30px;
                 }*/
@@ -2089,7 +2105,7 @@ p.copyright {
     }
 
         #contactus #contactusSection {
-            width: 100%;
+            /*width: 100%;*/
         }
 
         #contactus #contactusForm input[type=text], #contactus #contactusForm textarea {
@@ -2104,7 +2120,7 @@ p.copyright {
         #contactus #feeds {
             width: 90%;
             padding: 0;
-            margin: 40px 0 0;
+            /*margin: 40px 0 0;*/
             display: table;
             float: left;
         }
