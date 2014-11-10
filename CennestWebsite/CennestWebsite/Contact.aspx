@@ -15,7 +15,7 @@
                     <h1>Contact Us</h1>
                     <div id="contactusWrapper">
                     <div id="feeds" class="position-relative">
-                         <img src="styles/Daksh_sir_new.png" id="founder_Pic" />
+                         <img src="styles/founder_pic.png" id="founder_Pic" />
                         <div id="contactDetails">
                             <h2>Let us speak</h2>
                             <div class="margin-bottom-1px">
