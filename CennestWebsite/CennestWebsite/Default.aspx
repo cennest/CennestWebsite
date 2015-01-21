@@ -114,8 +114,8 @@
                                         <tr>
                                             <td style="vertical-align:top;width:45px;">
                                                 <div class="twitter-pic">
-                                                    <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank">
-                                                        <img src="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ProfileImageUrl %>" width="42" height="42" alt="twitter icon" />
+                                                    <a href="http://twitter.com/<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ScreenName%>" target="_blank">
+                                                        <img src="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ProfileImageUrlHttps %>" width="42" height="42" alt="twitter icon" />
                                                     </a>
                                                 </div>
                                             </td>
@@ -124,9 +124,9 @@
                                                     <p>
                                                         <span class="tweetprofilelink">
                                                             <strong>
-                                                                <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank"><%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Name %></a>
+                                                                <a href="http://twitter.com/<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ScreenName%>" target="_blank"><%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Name %></a>
                                                             </strong>
-                                                            <a href="<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.Url %>" target="_blank">@<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ScreenName %></a>
+                                                            <a href="http://twitter.com/<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ScreenName%>" target="_blank">@<%# ((TweetSharp.TwitterStatus)Container.DataItem).User.ScreenName %></a>
                                                         </span>
                                                         <br>
                                                         <%# ((TweetSharp.TwitterStatus)Container.DataItem).TextAsHtml %>

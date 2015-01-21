@@ -84,7 +84,12 @@ namespace CennestWebsite
             var service = new TwitterService(consumerKey, consumerSecret);
             service.AuthenticateWith(accessToken, accessTokenSecret);
 
-            List<TwitterStatus> tweets = service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions()).ToList();
+            //List<TwitterStatus> tweets = service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions()).ToList();
+            var tweets = service.ListTweetsOnUserTimeline(new ListTweetsOnUserTimelineOptions {
+                //ScreenName = "anshulee",
+                UserId = 14655624,
+                Count = 10
+            });
             twitterfeed.DataSource = tweets;
             twitterfeed.DataBind();
         }
