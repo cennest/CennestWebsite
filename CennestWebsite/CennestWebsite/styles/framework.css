@@ -1,0 +1,270 @@
+﻿body {
+    background-color: #3e404a;
+    margin: 0;
+    font-family: sans-serif, Segoe UI Bold;
+}
+
+.header {
+    text-align: center;
+    padding: 60px 0 20px;
+}
+
+.gridheader {
+    padding: 30px 0 0 !important;
+}
+
+.header h2 {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.horizontalgrid {
+    margin: 0 auto;
+}
+
+.pagespan {
+    width: 100%;
+}
+
+.horizontalgrid .frame {
+    margin: 0 auto;
+    overflow: hidden;
+    text-shadow: none;
+}
+
+    .horizontalgrid .frame ul {
+        list-style: none;
+        margin: 60px auto;
+        padding: 0;
+        height: 100%;
+    }
+
+        .horizontalgrid .frame ul li {
+            float: left;
+            width: 300px;
+            height: 100%;
+            margin: 0 75px 0 0;
+            padding: 0;
+            /*background: #2572EB;*/
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+            .horizontalgrid .frame ul li.active {
+                color: #fff;
+                background: #3B60E4;
+            }
+
+            .horizontalgrid .frame ul li:first-child {
+                margin-left: 1em;
+            }
+
+            .horizontalgrid .frame ul li:last-child {
+                margin-right: 1em;
+            }
+
+.horizontalgrid .scrollbar {
+    margin: 8% auto 30px;
+    width: 90%;
+    height: 25px;
+    line-height: 0;
+    background-color: gray;
+}
+
+    .horizontalgrid .scrollbar .handle {
+        width: 100px;
+        height: 100%;
+        background: #fff;
+        cursor: pointer;
+    }
+
+        .horizontalgrid .scrollbar .handle .mousearea {
+            position: absolute;
+            top: -9px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+        }
+
+.grid .frame {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.tile-container {
+    height: 270px;
+}
+
+.tile-button {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.text-container {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+    .text-container .top-text {
+        padding: 20px 25px 0;
+        text-align: left;
+        position: relative;
+        text-transform:uppercase;
+    }
+
+    .text-container .bottom-text {
+        text-align: center;
+        width: 100%;
+        line-height: .9em;
+        font-size: 1rem;
+        position: relative;
+        bottom: 15px;
+    }
+
+/*.tile-text-container {
+      top: 50%;
+  position: absolute;
+  text-transform:uppercase;
+    width: 100%;
+}*/
+
+.grid ul {
+    width: 88.5%;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 40px auto;
+    margin-bottom: 1.25rem;
+    list-style-position: outside;
+    font-family: inherit;
+}
+
+    .grid ul > li {
+        display: inline;
+        width: 16%;
+        min-width: 200px;
+        background: #2572EB;
+        float: left;
+        margin: 1.5%;
+        height: auto;
+        text-align: center;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+.grid .tile-container {
+    height: 215px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #2572EB;
+}
+
+.grid .text-container .top-text {
+    padding: 7px 15px 0;
+}
+
+.grid .text-container .bottom-text {
+    position: relative;
+    bottom: 17px;
+}
+
+
+.opac {
+    opacity: 0.3;
+}
+
+.icon-container {
+    height: 80%;
+    width: 100% !important;
+    display:block;
+}
+
+.sms4 {
+    background-image: url('../images/sms4.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+
+.cloud-uploader{
+     background-image: url('../images/modernapps.png') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+.custom-carousel{
+ background-image: url('../images/carousel.png') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+.wmf{
+ background-image: url('../images/WMF.png') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+.android-network-sharing{
+ background-image: url('../images/android-network-sharing.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+
+.machine-learning{
+ background-image: url('../images/machine-learning.png') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+.multiplatform-book-creation{
+ background-image: url('../images/multiplatform-book-creation.png') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50% 0%;
+}
+.android-circular-carousel{
+ background-image: url('../images/android-circular-carousel.png') !important;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 50%;
+}
+
+
+
+
+
+.footer-panel {
+    padding: 75px 60px 0;
+    float: right;
+}
+
+    .footer-panel > div {
+        border-radius: 15px;
+    }
+
+    .footer-panel img {
+        margin-left: 20px;
+        width: 80px;
+        border-radius: 50px;
+    }
+
+.grid .footer-panel {
+    padding: 20px 60px 0;
+}

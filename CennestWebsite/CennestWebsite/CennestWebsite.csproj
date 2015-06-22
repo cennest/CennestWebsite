@@ -154,10 +154,25 @@
     <Content Include="Contact.aspx" />
     <Content Include="Blogs.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Frameworks.aspx" />
+    <Content Include="images\android-circular-carousel.png" />
+    <Content Include="images\android-network-sharing.jpg" />
+    <Content Include="images\carousel.png" />
+    <Content Include="images\machine-learning.png" />
+    <Content Include="images\modernapps.png" />
+    <Content Include="images\multiplatform-book-creation.png" />
     <Content Include="images\noisy-texture.jpg" />
     <Content Include="images\Portfolio.jpg" />
+    <Content Include="images\sms4.jpg" />
     <Content Include="images\TagCloud.png" />
+    <Content Include="images\WMF.png" />
     <Content Include="Portfolio.aspx" />
+    <Content Include="Scripts\framework-view.js" />
+    <Content Include="Scripts\sly\GenerateRandomColors.js" />
+    <Content Include="Scripts\sly\jquery.js" />
+    <Content Include="Scripts\sly\modernizr.js" />
+    <Content Include="Scripts\sly\sly.js" />
+    <Content Include="Scripts\frameworks.js" />
     <Content Include="slider-images\bannerImg01.jpg" />
     <Content Include="slider-images\Company1.jpg" />
     <Content Include="slider-images\Company2.jpg" />
@@ -166,6 +181,7 @@
     <Content Include="slider-images\Company5.jpg" />
     <Content Include="slider-images\Company6.JPG" />
     <Content Include="slider-images\Company7.JPG" />
+    <Content Include="styles\framework.css" />
     <Content Include="styles\founder_pic.png" />
     <Content Include="styles\Email_logo.png" />
     <Content Include="styles\phone_logo.png" />
@@ -491,6 +507,13 @@
     </Compile>
     <Compile Include="Blogs.aspx.designer.cs">
       <DependentUpon>Blogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frameworks.aspx.cs">
+      <DependentUpon>Frameworks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frameworks.aspx.designer.cs">
+      <DependentUpon>Frameworks.aspx</DependentUpon>
     </Compile>
     <Compile Include="Portfolio.aspx.cs">
       <DependentUpon>Portfolio.aspx</DependentUpon>
