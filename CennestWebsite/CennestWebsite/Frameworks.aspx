@@ -8,7 +8,7 @@
        <div class="divPanel notop page-content page-container">
 
         <div class="breadcrumbs">
-            <a href="Default.aspx">Home</a> &nbsp;/&nbsp; <span>Showcase</span>
+            <a href="Default.aspx">Home</a> &nbsp;/&nbsp; <span>Frameworks</span>
         </div>
 
         <div class="row-fluid">

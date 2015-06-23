@@ -212,8 +212,8 @@
 				// Iterate through items
 				$items.each(function (i, element) {
 				    //Get randomly generated background-color
-				    var backgroundColor = random(i, 6);
-				    var darkBackgroundColor = colorLuminance(backgroundColor, -0.15);
+				    //var backgroundColor = random(i, 6);
+				   // var darkBackgroundColor = colorLuminance(backgroundColor, -0.15);
 					// Item
 					var $item = $(element);
 					var rect = element.getBoundingClientRect();
@@ -229,7 +229,7 @@
 					item.start = slideeSize + (singleSpaced ? itemMarginStart : 0);
 					item.center = item.start - round(frameSize / 2 - item.size / 2);
 					item.end = item.start - frameSize + item.size;
-					item.background = $item.css('background', backgroundColor);
+					//item.background = $item.css('border', '1px solid' + backgroundColor);
 					// Account for slidee padding
 					if (!i) {
 						slideeSize += paddingStart;

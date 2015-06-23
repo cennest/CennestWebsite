@@ -50,10 +50,11 @@
             height: 100%;
             margin: 0 75px 0 0;
             padding: 0;
-            /*background: #2572EB;*/
-            color: #fff;
+            background: #fff;
+            color:#000;
             text-align: center;
             cursor: pointer;
+            border:1px solid rgb(219, 167, 0);
         }
 
             .horizontalgrid .frame ul li.active {
@@ -117,7 +118,7 @@
 .text-container {
     text-align: center;
     width: 100%;
-    color: #fff;
+    /*color:rgb(219, 167, 0)*/;
 }
 
     .text-container .top-text {
@@ -125,6 +126,7 @@
         text-align: left;
         position: relative;
         text-transform:uppercase;
+        font-weight:600;
     }
 
     .text-container .bottom-text {
@@ -237,7 +239,7 @@
  background-image: url('../images/multiplatform-book-creation.png') !important;
     background-repeat: no-repeat;
     background-size: 75%;
-    background-position: 50% 0%;
+    background-position: 50% -8%;
 }
 .android-circular-carousel{
  background-image: url('../images/android-circular-carousel.png') !important;
