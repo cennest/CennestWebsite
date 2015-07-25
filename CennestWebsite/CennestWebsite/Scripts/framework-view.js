@@ -29,8 +29,11 @@ var FrameworkView = {
                             '<div class="text-container">' +
                                     '<div class="top-text">' + framework.Tiles.text + '</div>' +
                                 '</div>' +
-                                '<div class="icon-container ' + framework.Tiles.imageCssClass + '">' +
+                                '<div class="icon-container tileLogo ' + framework.Tiles.imageCssClass + '">' +
                                 '</div>' +
+                                '<div class="text-container">' +
+                                        '<div class="bottom-text"></div>' +
+                                    '</div>' +
                         '</div>'+
                     '</div>'+
                     '</li>');
