@@ -19,7 +19,7 @@ var FrameworkList = {
     getAllTiles: function () {
         return [
             new Tiles('Multi-platform Book Creation', 'multiplatform-book-creation'),
-            new Tiles('Modern Apps Cloud Uploader', 'cloud-uploader'),
+            //new Tiles('Modern Apps Cloud Uploader', 'cloud-uploader'),
             new Tiles('Android Infinite Circular Carousel', 'android-circular-carousel'),
             new Tiles('Multiplatform SMS4 Encryption', 'sms4'),
             new Tiles('Modern Apps Carousel', 'custom-carousel'),
